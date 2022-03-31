@@ -4,6 +4,7 @@ import Grid from "../components/Grid";
 import {useEffect} from "react";
 import { assignColors } from "../helpers";
 import Contact from "../components/Contact";
+import Main from "../components/Main";
 
 const Home = ({products}) => {
 
@@ -21,6 +22,8 @@ const Home = ({products}) => {
       
       <Hero />
 
+      <Main/>
+      
       <Grid products={products}/>
 
       <Contact />

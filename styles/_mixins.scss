@@ -273,11 +273,11 @@
   }
 
   @if $buttonShape == "smooth" {
-    @return 9px;
+    @return 4px;
   }
 
   @if $buttonShape == "full" {
-    @return 49px;
+    @return 25px;
   }
 
   @return 0px;

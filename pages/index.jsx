@@ -6,7 +6,7 @@ import { assignColors } from "../helpers";
 import Contact from "../components/Contact";
 import Main from "../components/Main";
 
-const Home = ({products}) => {
+const Home = ({featuredProduct,products}) => {
 
   useEffect(() => {
     assignColors();
@@ -22,7 +22,7 @@ const Home = ({products}) => {
       
       <Hero />
 
-      <Main/>
+      <Main featuredProduct={featuredProduct}/>
       
       <Grid products={products}/>
 
@@ -35,11 +35,28 @@ const Home = ({products}) => {
 
 export const getServerSideProps = async () => {
 
-  const res = await fetch(process.env.NEXT_PUBLIC_API_KEY+"?all=true&limit=12&offset=0");
-  const data = await res.json();
+  const endpoint = process.env.NEXT_PUBLIC_API_KEY;
+  async function featuredProduct(){
+
+    const res = await fetch(endpoint+"/2096389b-aa71-4f03-9cd0-242d6050e964");
+    const response = await res.json();
+    const {product:featured_product} = response;
+    return featured_product;
+
+  }
+
+  async function initialProducts(){
+    const res = await fetch(endpoint+"?all=true&limit=12&offset=0");
+    const data = await res.json()    
+    return data;
+  }
+
+  const [featured_product,data] = await Promise.all([featuredProduct(),initialProducts()]);
+
 
   return {
     props: {
+      featuredProduct: featured_product,
       products: data.products
     },
   };

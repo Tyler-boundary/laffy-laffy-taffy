@@ -66,6 +66,7 @@ const Hero = () => {
               className="object-cover min-h-full"
               layout="fill"
               quality={100}
+              priority={true}
             />
 
           </div>

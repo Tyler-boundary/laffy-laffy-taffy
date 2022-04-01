@@ -1,7 +1,5 @@
 import {useEffect, useState} from "react";
 import Image from "next/image";
-import Marquee from "./Marquee";
-import HeroGrid from "../public/hero_grid.svg";
 
 
 const title = process.env.NEXT_PUBLIC_HERO_TITLE ?? "";
@@ -14,28 +12,44 @@ const cta_link = process.env.NEXT_PUBLIC_HERO_CTA_LINK ?? "/";
 const Hero = () => {
 
   const [desktopImage,setDesktopImage] = useState(typeof window !== "undefined" ? window.innerWidth > 768 ? true : false : false);
+  const [currentImage, setCurrentImage] = useState(imageDesktop);
 
   useEffect(() => {
 
-    function handleResizeEvent(){
+    if(typeof window !== "undefined"){
 
-      if(typeof window !== "undefined"){
+      if(window.innerWidth > 768){
+        setCurrentImage(imageDesktop)
+      }else{
+        setCurrentImage(imageMobile)
+      }
+
+      function handleResizeEvent(){
+
         if(window.innerWidth > 768){
           setDesktopImage(true);
         }else{
           setDesktopImage(false);
         }
-
+  
       }
-
-    }
-
-    if(typeof window !== "undefined"){
+      
       window.addEventListener("resize", handleResizeEvent);
       return window.removeEventListener("resize",handleResizeEvent,true);
+
     }
 
   }, []);
+
+  useEffect(() => {
+
+    if(desktopImage){
+      setCurrentImage(imageDesktop)
+    }else{
+      setCurrentImage(imageMobile)
+    }
+
+  }, [desktopImage]);
 
   return (
     <>
@@ -43,30 +57,16 @@ const Hero = () => {
       <section className="h-[530px] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative">
 
         <div className="absolute inset-0 w-full h-full max-h-full">
-
+    
           <div className="relative w-full h-full max-h-full">
 
-            {desktopImage && (
-              <Image
-                src={imageDesktop}
-                alt={imageDesktop}
-                className="object-cover min-h-full"
-                layout="fill"
-                quality={100}
-                priority={true}
-              />
-            )}
-
-            { !desktopImage && (
-              <Image
-                src={imageMobile}
-                alt={imageMobile}
-                className="object-cover min-h-full"
-                layout="fill"
-                quality={100}
-                priority={true}
-              />
-            )}
+            <Image
+              src={currentImage}
+              alt={currentImage.replace("/","")}
+              className="object-cover min-h-full"
+              layout="fill"
+              quality={100}
+            />
 
           </div>
 

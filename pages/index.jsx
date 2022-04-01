@@ -38,7 +38,7 @@ export const getServerSideProps = async () => {
   const endpoint = process.env.NEXT_PUBLIC_API_KEY;
   async function featuredProduct(){
 
-    const res = await fetch(endpoint+"/2096389b-aa71-4f03-9cd0-242d6050e964");
+    const res = await fetch(endpoint.toString().concat(`/${process.env.NEXT_PUBLIC_MAIN_FEATURED_PRODUCT ?? "2096389b-aa71-4f03-9cd0-242d6050e964" }`));
     const response = await res.json();
     const {product:featured_product} = response;
     return featured_product;

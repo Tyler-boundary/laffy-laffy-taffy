@@ -1,35 +1,83 @@
+import {useEffect, useState} from "react";
 import Image from "next/image";
 import Marquee from "./Marquee";
 import HeroGrid from "../public/hero_grid.svg";
 
 
 const title = process.env.NEXT_PUBLIC_HERO_TITLE ?? "";
-const description = process.env.NEXT_PUBLIC_HERO_DESCRIPTION ?? "";
-const image = "/".concat(process.env.NEXT_PUBLIC_HERO_IMAGE) ?? "";
+const imageDesktop = "/".concat(process.env.NEXT_PUBLIC_HERO_IMAGE_DESKTOP) ?? "";
+const imageMobile = "/".concat(process.env.NEXT_PUBLIC_HERO_IMAGE_MOBILE) ?? "";
+const cta_text = process.env.NEXT_PUBLIC_HERO_CTA_TEXT ?? "";
+const cta_link = process.env.NEXT_PUBLIC_HERO_CTA_LINK ?? "/";
+
 
 const Hero = () => {
+
+  const [desktopImage,setDesktopImage] = useState(typeof window !== "undefined" ? window.innerWidth > 768 ? true : false : false);
+
+  useEffect(() => {
+
+    function handleResizeEvent(){
+
+      if(typeof window !== "undefined"){
+        if(window.innerWidth > 768){
+          setDesktopImage(true);
+        }else{
+          setDesktopImage(false);
+        }
+
+      }
+
+    }
+
+    if(typeof window !== "undefined"){
+      window.addEventListener("resize", handleResizeEvent);
+      return window.removeEventListener("resize",handleResizeEvent,true);
+    }
+
+  }, []);
+
   return (
     <>
 
-      <section className="h-[530px] w-full mx-auto flex flex-col justify-center items-center max-w-[1440px] relative">
+      <section className="h-[530px] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative">
 
         <div className="absolute inset-0 w-full h-full max-h-full">
+
           <div className="relative w-full h-full max-h-full">
-            <Image
-              src={"/hero_image_3.png"}
-              alt={"/hero_image_3.png"}
-              className="object-cover min-h-full"
-              layout="fill"
-              quality={100}
-              priority={true}
-            />
+
+            {desktopImage && (
+              <Image
+                src={imageDesktop}
+                alt={imageDesktop}
+                className="object-cover min-h-full"
+                layout="fill"
+                quality={100}
+                priority={true}
+              />
+            )}
+
+            { !desktopImage && (
+              <Image
+                src={imageMobile}
+                alt={imageMobile}
+                className="object-cover min-h-full"
+                layout="fill"
+                quality={100}
+                priority={true}
+              />
+            )}
+
           </div>
+
         </div>
 
         <div className="absolute inset-0 w-full h-full items-center flex flex-col justify-center ">
-            <h1 className="max-w-[673px px-1 md:px-0 w-full text-5xl md:text-[51px] text-secondary font-black text-center mb-9">Exclusive NFTs of your favorite athletes</h1>
-            <a className="py-2.5 buttonShape px-5 bg-primary text-secondary text-[11px] font-medium text- leading-[10px]" href="">
-              Explore ↓ 
+            <h1 className="max-w-[673px px-1 md:px-0 w-full text-5xl md:text-[51px] text-secondary font-black text-center mb-9">
+              {title}
+            </h1>
+            <a href={cta_link} className="py-2.5 buttonShape px-5 bg-primary text-secondary text-[11px] font-medium text- leading-[10px]">
+              {cta_text}
             </a>
         </div>
 

@@ -166,7 +166,7 @@ function CustomProductViewer({ product }) {
 
           <div className="absolute inset-0 w-full flex flex-col justify-center items-center">
 
-            <div className='relative w-full h-full flex max-h-full justify-center max-w-full transition-transform duration-200 ease-[ease-in-out] md:hover:scale-105'>
+            <div className='relative shadow-2xl w-full h-full flex max-h-full justify-center max-w-full transition-transform duration-200 ease-[ease-in-out] md:hover:scale-105'>
 
               {
                 productInfo?.tokenMetadata?.animation_url != undefined ? (

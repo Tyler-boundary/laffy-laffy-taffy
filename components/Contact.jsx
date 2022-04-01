@@ -28,7 +28,7 @@ function Contact() {
 
   return (
 
-    <section className='mt-[120px] pt-10 pb-40 max-w-[1440px] mx-auto w-full h-full lg:min-h-full relative overflow-hidden flex flex-col items-center bg-[#1A1A1A]'>
+    <section className='mt-[120px] pt-10 pb-40 mx-auto w-full h-full lg:min-h-full relative overflow-hidden flex flex-col items-center bg-[#1A1A1A]'>
 
       <div className='w-max mx-auto h-full max-h-max mb-[132px]'>
 

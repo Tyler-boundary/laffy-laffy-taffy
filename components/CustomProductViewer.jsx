@@ -188,6 +188,7 @@ function CustomProductViewer({ product }) {
                     src={productInfo?.tokenMetadata?.image}
                     alt={productInfo?.tokenMetadata?.title}
                     layout="fill"
+                    quality={100}
                   />
 
                 )

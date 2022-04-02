@@ -17,13 +17,15 @@ function Contact() {
 
   useEffect(() => {
 
-    const image = document.createElement("IMG");
-    image.classList.add("w-full","h-full");
-    image.src = footerImage;
-    image.onload = () => {
-      setHeight(image.height);
-      setWidth(image.width);
-      setIsLoadImage(true);
+    if(footerImage != "/undefined"){
+      const image = document.createElement("IMG");
+      image.classList.add("w-full","h-full");
+      image.src = footerImage;
+      image.onload = () => {
+        setHeight(image.height);
+        setWidth(image.width);
+        setIsLoadImage(true);
+      }
     }
 
   }, []);

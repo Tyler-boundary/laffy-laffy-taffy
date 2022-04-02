@@ -200,17 +200,27 @@ const Grid = ({ products}) => {
           
           {
             productListActive && (
-              <div className="container mx-auto w-full flex flex-col space-y-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-8">
+
+              <div className="container mx-auto w-full flex flex-col space-y-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8">
 
                 {
 
-                  productList.map((item) => (
-                    <CustomProductViewer product={item} key={hash(item.id)}/>
-                  ))
+                  productList.map((item) => {
+
+                    if(Object.entries(item).length > 1){
+                      return (
+                        <CustomProductViewer product={item} key={hash(item.id)}/>
+                      )
+                    }else{
+                      console.log(`The id ${item.id} doesn't exists or is wrong`);
+                    }
+
+                  })
 
                 }
 
               </div>
+
             )
           }
 
@@ -235,37 +245,39 @@ const Grid = ({ products}) => {
           }
 
           {
-            productListActive && (
-              <div className="flex flex-col space-y-5 items-center max-w-[151px] mx-auto my-5 w-full">
 
-                <div className="flex flex-col items-start w-full space-y-1">
-        
-                  <p className="text-[10px] font-normal text-center">
-                    {`SHOWIMG ${productList.length} OF ${totalProducts} PRODUCTS`}
-                  </p>
+            // productListActive && (
+            //   <div className="flex flex-col space-y-5 items-center max-w-[151px] mx-auto my-5 w-full">
 
-                  <div className="h-max w-full bg-transparent border border-standard ">
-                    <div id="progressbar" className="h-1 w-[12%] bg-standard"></div>
-                  </div>
+            //     <div className="flex flex-col items-start w-full space-y-1">
         
-                </div>
-        
-                {
-                  loadMorePages && (
-        
-                    <button
-                    className="bg-primary font-light buttonShape text-[11px] text-secondary px-6 py-2.5 text-center"
-                    onClick={handleClickPagination}
-                    >
-                      LOAD MORE
-                    </button>
-        
-                  )
-                }
-        
-              </div>
+            //       <p className="text-[10px] font-normal text-center">
+            //         {`SHOWIMG ${productList.length} OF ${totalProducts} PRODUCTS`}
+            //       </p>
 
-            )
+            //       <div className="h-max w-full bg-transparent border border-standard ">
+            //         <div id="progressbar" className="h-1 w-[12%] bg-standard"></div>
+            //       </div>
+        
+            //     </div>
+        
+            //     {
+            //       loadMorePages && (
+        
+            //         <button
+            //         className="bg-primary font-light buttonShape text-[11px] text-secondary px-6 py-2.5 text-center"
+            //         onClick={handleClickPagination}
+            //         >
+            //           LOAD MORE
+            //         </button>
+        
+            //       )
+            //     }
+        
+            //   </div>
+
+            // )
+
           }
 
         </section>

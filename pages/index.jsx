@@ -47,11 +47,12 @@ export const getServerSideProps = async () => {
 
   }
 
-  async function initialProducts(){
+  async function x(){
 
     const res = await fetch(endpoint+"?all=true&limit=100&offset=0");
     const data = await res.json()
     const {products} = data;
+    console.log(products.map(p => p.id));
     return products;
     
   }
@@ -78,8 +79,6 @@ export const getServerSideProps = async () => {
 
       const productId = id.toString().trim().replaceAll("'","").replaceAll('"',"");
 
-      // const productId = id.toString().trim().replaceAll("'","");
-
       const keys = productId.split("-");
       let validCombination = "";
 
@@ -93,11 +92,8 @@ export const getServerSideProps = async () => {
 
       return {id};
 
- 
-
     } catch (error) {
       return {id};
-
     }
     
   }

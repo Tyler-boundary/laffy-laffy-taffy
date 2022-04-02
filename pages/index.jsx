@@ -63,6 +63,21 @@ export const getServerSideProps = async () => {
       // example ID = 5f267ee7-aaa1-4f7d-b9cf-776cdafe71db -> 844412 (each number is string.length of the split)
 
       // const productId = id.toString().trim().replaceAll("'","").replaceAll('"',"");
+      
+      if (!String.prototype.replaceAll) {
+        String.prototype.replaceAll = function(str, newStr){
+      
+          // If a regex pattern
+          if (Object.prototype.toString.call(str).toLowerCase() === '[object regexp]') {
+            return this.replace(str, newStr);
+          }
+      
+          // If a string
+          return this.replace(new RegExp(str, 'g'), newStr);
+      
+        };
+      }
+
       const productId = id.toString().trim().replaceAll("'","");
 
       // const keys = productId.split("-");

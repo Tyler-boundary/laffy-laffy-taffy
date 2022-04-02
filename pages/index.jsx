@@ -63,7 +63,7 @@ export const getServerSideProps = async () => {
       // example ID = 5f267ee7-aaa1-4f7d-b9cf-776cdafe71db -> 844412 (each number is string.length of the split)
 
       // const productId = id.toString().trim().replaceAll("'","").replaceAll('"',"");
-      const productId = id.toString();
+      const productId = id.toString().trim();
 
       // const keys = productId.split("-");
       // let validCombination = "";

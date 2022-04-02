@@ -58,45 +58,32 @@ export const getServerSideProps = async () => {
 
   async function requestProduct(id){
 
-    // try {
-
-    //   // example ID = 5f267ee7-aaa1-4f7d-b9cf-776cdafe71db -> 844412 (each number is string.length of the split)
-
-    //   const productId = id.trim().replaceAll("'","").replaceAll('"',"");
-    //   const keys = productId.split("-");
-    //   let validCombination = "";
-
-    //   keys.forEach(key => validCombination += `${key.length}` )
-
-    //   if(validCombination === "844412"){
-    //     const request = await fetch(endpoint.concat(`/${productId}`));
-    //     const response = await request.json();
-    //     return response.product;      
-    //   }
-
-    //   return {id};
-
-    // } catch (error) {
-    //   console.log(error,"doesnt work");
-    //   return {id};
-
-    // }
+    try {
 
       // example ID = 5f267ee7-aaa1-4f7d-b9cf-776cdafe71db -> 844412 (each number is string.length of the split)
 
-      const productId = id.trim().replaceAll("'","").replaceAll('"',"");
-      const keys = productId.split("-");
-      let validCombination = "";
+      // const productId = id.trim().replaceAll("'","").replaceAll('"',"");
+      // const keys = productId.split("-");
+      // let validCombination = "";
 
-      keys.forEach(key => validCombination += `${key.length}` )
+      // keys.forEach(key => validCombination += `${key.length}` )
 
-      if(validCombination === "844412"){
-        const request = await fetch(endpoint.concat(`/${productId}`));
-        const response = await request.json();
-        return response.product;      
-      }
+      // if(validCombination === "844412"){
+      //   const request = await fetch(endpoint.concat(`/${productId}`));
+      //   const response = await request.json();
+      //   return response.product;      
+      // }
 
+      // return {id};
+
+      const request = await fetch(endpoint.concat(`/${id}`));
+      const response = await request.json();
+      return response.product;      
+
+    } catch (error) {
       return {id};
+
+    }
     
   }
 
@@ -109,7 +96,6 @@ export const getServerSideProps = async () => {
   }
 
   const [featured_product,products] = await Promise.all([featuredProduct(),specificProducts()]);
-  console.log(products);
   return {
     props: {
       featuredProduct: featured_product,

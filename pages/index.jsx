@@ -92,8 +92,8 @@ export const getServerSideProps = async () => {
     
   }
 
-  const [featured_product,products] = await Promise.all([featuredProduct(),specificProducts()]);
-
+  const [featured_product,products] = await Promise.all([featuredProduct(),initialProducts()]);
+  console.log(products);
   return {
     props: {
       featuredProduct: featured_product,

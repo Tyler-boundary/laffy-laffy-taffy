@@ -8,7 +8,7 @@ const description = process.env.NEXT_PUBLIC_MAIN_DESCRIPTION ?? "";
 function Main({featuredProduct}) {
   return (
 
-    <section className='w-full mb-[105px] max-w-[1440px] px-5 md:px-20 mx-auto h-full flex flex-col justify-center items-center pt-[110px]'>
+    <section className='w-full max-w-[1440px] px-5 md:px-20 mx-auto h-full flex flex-col justify-center items-center pt-[110px]'>
 
       <div className='w-full justify-center items-center mb-[67px]'>
         <h2 className='text-lg text-center font-medium max-w-[616px] mx-auto leading-[27px]'>

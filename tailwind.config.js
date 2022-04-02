@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'standard' : 'var(--standard-mode)',
+        'standardO' : 'var(--standard-original)',
         'primary': 'var(--color-primary)',
         'secondary': 'var(--color-secondary)',
       },

@@ -32,11 +32,11 @@ function Contact() {
 
   return (
 
-    <section className='mt-[120px] pt-10 pb-40 mx-auto w-full h-full lg:min-h-full relative overflow-hidden flex flex-col items-center bg-[#1A1A1A]'>
+    <section className='pt-10 pb-40 mx-auto w-full h-full lg:min-h-full relative overflow-hidden flex flex-col items-center bg_contact_footer '>
 
       <div className="max-w-[1440px] w-full h-full mx-auto flex flex-col items-center">
 
-        <div className='w-max mx-auto h-full max-h-max mb-[132px]'>
+        <div className='w-max mx-auto h-full max-h-max mb-[125px]'>
 
           <Image
             src={logoFileName}
@@ -47,13 +47,13 @@ function Contact() {
 
         </div>
 
-        <div className="flex flex-col items-center text-white">
+        <div className="flex flex-col items-center text-standardO">
 
-          <h2 className='text-[35px] font-black leading-[42px] text-center mb-6'>
+          <h2 className='text-[35px] font-black leading-[42px] text-center mb-[22px]'>
             {title}
           </h2>
 
-          <p className='max-w-[658px] mb-[30px] text-center w-full text-lg font-medium leading-[25px]'>
+          <p className='max-w-[658px] mb-[25px] text-center w-full text-lg font-medium leading-[25px]'>
             {description}
           </p>
 
@@ -68,7 +68,7 @@ function Contact() {
                 return(
 
                   <a className="block" rel="noreferrer" target={"_blank"} href={URL} key={index}>
-                    <Icon className="fill-secondary" />
+                    <Icon className="fill-standardO" />
                   </a>
                   
                 )

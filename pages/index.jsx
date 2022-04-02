@@ -10,7 +10,6 @@ import Main from "../components/Main";
 const Home = ({featuredProduct,products}) => {
 
   useEffect(() => {
-    console.log(products);
     assignColors();
   }, [products]);
 
@@ -75,7 +74,7 @@ export const getServerSideProps = async () => {
         return response.product;      
       }
 
-      return {id};
+      return {id:`${id} dont pass filter`};
 
     } catch (error) {
 

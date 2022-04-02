@@ -77,7 +77,7 @@ export const getServerSideProps = async () => {
       return {id:`${id} dont pass filter`};
 
     } catch (error) {
-      console.log(error);
+      console.log(error,"doesnt work");
       return {id};
 
     }

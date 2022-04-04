@@ -101,7 +101,7 @@ export const getServerSideProps = async () => {
   async function specificProducts(){
 
     // let arrayProducts =  process.env.NEXT_PUBLIC_ARRAY_IDS.split(",");
-    const requestProducts = await fetch("token-system-one.vercel.app/api/tokens");
+    const requestProducts = await fetch("https://token-system-one.vercel.app/api/tokens");
     const responseProducts = await requestProducts.json();
     const arrayProducts = responseProducts.map(item => item.token).reverse();
     const allResponses = await Promise.all(arrayProducts.map(id => requestProduct(id)));

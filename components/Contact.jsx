@@ -17,10 +17,10 @@ function Contact() {
 
   useEffect(() => {
 
-    if(footerImage != "/undefined"){
+    if(logoFileName != "/undefined"){
       const image = document.createElement("IMG");
       image.classList.add("w-full","h-full");
-      image.src = footerImage;
+      image.src = logoFileName;
       image.onload = () => {
         setHeight(image.height);
         setWidth(image.width);
@@ -38,12 +38,18 @@ function Contact() {
 
         <div className='w-max mx-auto h-full max-h-max mb-[125px]'>
 
-          <Image
-            src={logoFileName}
-            width={107}
-            height={40}
-            alt={logoFileName}
-          />
+          {
+
+            isLoadImage && (
+              <Image
+              src={logoFileName}
+              alt={logoFileName.replace("/","")}
+              width={width}
+              height={height}
+              />
+            )
+
+          }
 
         </div>
 

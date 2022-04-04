@@ -1,9 +1,31 @@
+import {useEffect, useState} from 'react'
 import Image from "next/image";
 import Link from "next/link";
 const logoFileName = '/' +process.env.NEXT_PUBLIC_NAVBAR_LOGO;
 
 
 const Navbar = () => {
+
+  const [height, setHeight] = useState(0);
+  const [width, setWidth] = useState(0);
+  const [isLoadImage, setIsLoadImage] = useState(false);
+
+  useEffect(() => {
+
+    if(logoFileName != "/undefined"){
+      
+      const image = document.createElement("IMG");
+      image.classList.add("w-full","h-full");
+      image.src = logoFileName;
+      image.onload = () => {
+        setHeight(image.height);
+        setWidth(image.width);
+        setIsLoadImage(true);
+      }
+      
+    }
+
+  }, []);
 
   return (
 
@@ -13,16 +35,20 @@ const Navbar = () => {
 
         <div className="max-w-[700px] w-full flex items-center justify-between">
 
-          <div className="h-max w-full max-w-[107px]">
+          <div className="h-max w-max">
 
-            <Image
-              className="w-max h-max logo"
-              src={logoFileName}
-              width={107}
-              height={40}
-              layout={"responsive"}
-              alt={logoFileName}
-            />
+            {
+
+              isLoadImage && (
+                <Image
+                src={logoFileName}
+                alt={logoFileName.replace("/","")}
+                width={width}
+                height={height}
+                />
+              )
+
+            }
 
           </div>
 

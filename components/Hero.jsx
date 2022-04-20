@@ -54,7 +54,7 @@ const Hero = () => {
   return (
     <>
 
-      <section className="h-[530px] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative">
+      <section className="mt-[88px] md:mt-[120px] h-[368px] md:h-[500px] lg:h-[560px] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative">
 
         <div className="absolute inset-0 w-full h-full max-h-full">
     
@@ -74,12 +74,19 @@ const Hero = () => {
         </div>
 
         <div className="absolute inset-0 w-full h-full items-center flex flex-col justify-center ">
-            <h1 className="max-w-[673px px-1 md:px-0 w-full text-5xl md:text-[51px] text-secondary font-black text-center mb-9">
+
+            <h1 className="max-w-[343px] md:max-w-[560px] lg:max-w-[955px] px-1 md:px-0 w-full text-5xl text-[52px] leading-[52px] md:text-[60px] md:leading-[60px] lg:text-[64px] lg:leading-[64px] text-white font-black text-center mb-6 md:mb-10">
               {title}
             </h1>
-            <a href={cta_link} className="py-2.5 buttonShape px-5 bg-primary text-secondary text-[11px] font-medium text- leading-[10px]">
-              {cta_text}
+
+            <a 
+              href={cta_link}
+              className="px-[53.5px] leading-[14px] bg-primary py-[13px] text-center uppercase text-secondary buttonShape text-[12px] font-medium"
+            >
+            {cta_text}
+
             </a>
+
         </div>
 
       </section>

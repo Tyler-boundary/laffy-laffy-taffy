@@ -32,11 +32,11 @@ function Contact() {
 
   return (
 
-    <section className='pt-10 pb-40 mx-auto w-full h-full lg:min-h-full relative overflow-hidden flex flex-col items-center bg_contact_footer '>
+    <section className='pt-10 px-4 md:px-10 lg:px-20 md:pt-8 lg:pt-10 pb-[96px] md:pb-[64px] lg:pb-[96px] mx-auto w-full h-full lg:min-h-full relative overflow-hidden flex flex-col items-center bg_contact_footer '>
 
       <div className="max-w-[1440px] w-full h-full mx-auto flex flex-col items-center">
 
-        <div className='w-max mx-auto h-full max-h-max mb-[125px]'>
+        <div className='w-max mx-auto h-full max-h-max mb-[96px] md:mb-[60px] lg:mb-[96px]'>
 
           {
 
@@ -55,15 +55,15 @@ function Contact() {
 
         <div className="flex flex-col items-center text-standardO">
 
-          <h2 className='text-[35px] font-black leading-[42px] text-center mb-[22px]'>
+          <h2 className='text-[32px] font-black leading-[32px] text-center mb-6'>
             {title}
           </h2>
 
-          <p className='max-w-[658px] mb-[25px] text-center w-full text-lg font-medium leading-[25px]'>
+          <p className='max-w-[568px] text-base mb-10 text-center w-full font-medium leading-[25px]'>
             {description}
           </p>
 
-          <div className="w-full flex max-w-max mx-auto items-center space-x-9">
+          <div className="w-full flex max-w-max mx-auto items-center space-x-4 md:space-x-8">
 
             { arraySocialMedia.map( (child,index) => {
 

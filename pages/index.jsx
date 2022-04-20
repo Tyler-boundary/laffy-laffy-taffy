@@ -25,7 +25,7 @@ const Home = ({featuredProduct,products}) => {
 
       <Main featuredProduct={featuredProduct}/>
       
-      <Grid products={products}/>
+      <Grid products={products} featuredProduct={featuredProduct}/>
 
       <Contact />
       

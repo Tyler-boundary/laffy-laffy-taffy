@@ -7,9 +7,9 @@ const Footer = () => {
   return (
     <>
       <div className="h-px absolute w-full bg-standardO opacity-20"></div>
-      <footer className="py-10 bg_contact_footer text-standardO mx-auto px-5 md:px-20 flex w-full items-center justify-center space-x-5">
+      <footer className="py-10 bg_contact_footer text-standardO mx-auto px-4 md:px-10 lg:px-20 flex w-full items-center justify-center space-x-3">
 
-        <p className="uppercase text-[11px] font-medium">Powered By</p>
+        <p className="uppercase tracking-[.36em] text-[12px] font-medium">Powered By</p>
 
         <div>
           <Bitski className="filter_logo_footer" />

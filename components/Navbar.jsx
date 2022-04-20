@@ -35,7 +35,7 @@ const Navbar = () => {
 
         <div className="max-w-max space-x-[51px] md:space-x-0 md:max-w-[431px] lg:max-w-[700px] w-full flex items-center justify-between">
 
-          <div className="min-h-[36px] max-h-[40px] h-max w-max">
+          <div className="min-h-[32px] max-h-[32px] h-max w-max">
 
             {
 

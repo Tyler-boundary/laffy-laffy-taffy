@@ -9,7 +9,7 @@ const Navbar = () => {
   const [height, setHeight] = useState(0);
   const [width, setWidth] = useState(0);
   const [isLoadImage, setIsLoadImage] = useState(false);
-
+  console.log(width);
   useEffect(() => {
 
     if(logoFileName != "/undefined"){
@@ -18,6 +18,7 @@ const Navbar = () => {
       image.classList.add("w-full","h-full");
       image.src = logoFileName;
       image.onload = () => {
+        console.log(image);
         setHeight(image.height);
         setWidth(image.width);
         setIsLoadImage(true);
@@ -35,7 +36,7 @@ const Navbar = () => {
 
         <div className="max-w-max space-x-[51px] md:space-x-0 md:max-w-[431px] lg:max-w-[700px] w-full flex items-center justify-between">
 
-          <div className="h-max w-max">
+          <div className="max-h-[40px]">
 
             {
 
@@ -56,7 +57,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             href={process.env.NEXT_PUBLIC_NAVBAR_WALLET_TEXT} 
-            className=" py-[9.5px] px-[19px] md:px-[62.5px] leading-[13px] bg-primary md:py-[13.5px] text-center uppercase text-secondary buttonShape text-[12px] font-medium"
+            className=" py-[9.5px] px-[19px] md:px-[62.5px] leading-[13px] bg-primary md:py-[13.5px] text-center text-secondary buttonShape text-[12px] font-medium"
           >
             {process.env.NEXT_PUBLIC_NAVBAR_WALLET_TEXT}
           </a>

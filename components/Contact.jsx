@@ -32,11 +32,11 @@ function Contact() {
 
   return (
 
-    <section className='pt-10 px-4 md:px-10 lg:px-20 md:pt-8 lg:pt-10 pb-[96px] md:pb-[64px] lg:pb-[96px] mx-auto w-full h-full lg:min-h-full relative overflow-hidden flex flex-col items-center bg_contact_footer '>
+    <section className='pt-10 md:pt-8 lg:pt-10 pb-[96px] md:pb-[64px] lg:pb-[96px] mx-auto w-full h-full lg:min-h-full relative overflow-hidden flex flex-col items-center bg_contact_footer '>
 
-      <div className="max-w-[1440px] w-full h-full mx-auto flex flex-col items-center">
+      <div className="max-w-[1440px] px-4 md:px-10 lg:px-20 w-full h-full mx-auto flex flex-col items-center">
 
-        <div className='w-max mx-auto h-full max-h-max mb-[96px] md:mb-[60px] lg:mb-[96px]'>
+        <div className='h-full max-h-max mb-[96px] md:mb-[60px] lg:mb-[96px]'>
 
           {
 

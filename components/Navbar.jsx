@@ -36,16 +36,18 @@ const Navbar = () => {
 
         <div className="max-w-max space-x-[51px] md:space-x-0 md:max-w-[431px] lg:max-w-[700px] w-full flex items-center justify-between">
 
-          <div className="max-h-[40px]">
+          <div className="w-max max-w-[96px] md:max-w-full max-h-[40px]" style={ {width: width} }>
 
             {
 
               isLoadImage && (
+
                 <Image
-                src={logoFileName}
-                alt={logoFileName.replace("/","")}
-                width={width}
-                height={height}
+                  src={logoFileName}
+                  alt={logoFileName.replace("/","")}
+                  width={width}
+                  height={height}                
+                  layout="responsive"
                 />
               )
 

@@ -11,9 +11,9 @@ const Footer = () => {
 
         <p className="uppercase tracking-[.36em] text-[12px] font-medium">Powered By</p>
 
-        <div>
+        <a className="block" rel="noreferrer" target={"_blank"} href="https://www.bitski.com/">
           <Bitski className="filter_logo_footer" />
-        </div>
+        </a>
 
       </footer>
 

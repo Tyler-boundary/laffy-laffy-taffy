@@ -102,7 +102,7 @@ export const getServerSideProps = async () => {
         const response = await request.json();
         const {error} = response;
         if(error){
-          return {};
+          return {id};
         }else{
           return response.product;      
         }

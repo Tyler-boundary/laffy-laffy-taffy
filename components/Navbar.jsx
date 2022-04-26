@@ -39,7 +39,13 @@ const Navbar = () => {
 
           <div className="w-[calc(50vw+52px-16px)] md:w-[calc(50vw+52px-40px)] lg:w-[calc(50vw+52px-80px)] max-w-[calc(765px-80px)] flex items-center justify-between ml-auto">
 
-            <div className="w-max max-w-[96px] md:max-w-full max-h-[40px]" style={ {width: width} }>
+            <a 
+              className="block w-max max-w-[96px] md:max-w-full max-h-[40px]" 
+              style={ {width: width} }
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.bitski.com/"
+            >
 
               {
 
@@ -56,7 +62,7 @@ const Navbar = () => {
 
               }
 
-              </div>
+              </a>
 
               <a 
               target="_blank"

@@ -153,9 +153,9 @@ const Grid = ({ products, featuredProduct}) => {
   
   return (
 
-    <section id="grid" className="pt-10 md:pt-[120px] pb-20 md:pb-[120px] px-4 md:px-10 lg:px-20 max-w-[1440px] mx-auto w-full">
+    <section id="grid" className="pt-10 md:pt-[145px] pb-20 md:pb-[120px] px-4 md:px-10 lg:px-20 max-w-[1960px] mx-auto w-full">
       
-      <div className="flex-col space-y-5 max-w-[1440px] mx-auto w-full hidden">
+      <div className="flex-col space-y-5 max-w-[1960px] mx-auto w-full hidden">
 
         <h2>Filter Collection</h2>
 

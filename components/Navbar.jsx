@@ -32,7 +32,7 @@ const Navbar = () => {
 
     <nav className="fixed top-0 z-40 bg-NavBar w-full flex flex-col justify-center items-center py-6 md:py-10">
 
-      <div className="max-w-[1440px] w-full pr-4 md:pr-10 lg:pr-20 flex items-center justify-end">
+      <div className="max-w-[1960px] w-full pr-4 md:pr-10 lg:pr-20 flex items-center justify-end">
 
         {/* <div className="max-w-max space-x-[51px] md:space-x-0 md:max-w-[431px] lg:max-w-[700px] w-full flex items-center justify-between"> */}
         <div className="w-full flex items-center">

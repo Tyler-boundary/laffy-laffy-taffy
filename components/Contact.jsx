@@ -68,7 +68,6 @@ function Contact() {
             { arraySocialMedia.map( (child,index) => {
 
               const {Icon,URL} = child;
-              
               if(URL != ""){
                 
                 return(

@@ -48,6 +48,9 @@ export const assignColors = () => {
   const currentStandardOriginal = standardOriginalColors[process.env.NEXT_PUBLIC_STANDARD_MODE.replaceAll('"',"")] ?? "black";
   const currentPrimaryColor = primaryColor[process.env.NEXT_PUBLIC_PRIMARY_COLOR.replaceAll('"',"")] ?? (process.env.NEXT_PUBLIC_PRIMARY_COLOR != "" ? process.env.NEXT_PUBLIC_PRIMARY_COLOR : "white");
   const currentSecondaryColor = secondaryColor[process.env.NEXT_PUBLIC_SECONDARY_COLOR.replaceAll('"',"")] ?? (process.env.NEXT_PUBLIC_SECONDARY_COLOR != "" ? process.env.NEXT_PUBLIC_SECONDARY_COLOR : "rgba(255, 255, 255, 0.25)");
+  
+  const mt_live_auction = !isNaN( Number(process.env.NEXT_PUBLIC_MARGIN_TOP_LIVE_AUCTION) ) ? process.env.NEXT_PUBLIC_MARGIN_TOP_LIVE_AUCTION + "px" : "3px";
+  document.documentElement.style.setProperty('--mt-live_auction', mt_live_auction);
 
   document.documentElement.style.setProperty('--standard-mode', currentStandardMode );
   document.documentElement.style.setProperty('--standard-original', currentStandardOriginal );

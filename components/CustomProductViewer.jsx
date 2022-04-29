@@ -238,7 +238,7 @@ function CustomProductViewer({ product }) {
 
                   Live auction
 
-                  <span className='ml-2 h-2.5 w-2.5 rounded-full liveActionBg animate-pulse transition-all block'>
+                  <span className='ml-2 h-2.5 mt-live_auction w-2.5 rounded-full liveActionBg animate-pulse transition-all block'>
                   </span>
 
                 </>

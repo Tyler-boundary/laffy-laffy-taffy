@@ -57,6 +57,7 @@ const Navbar = () => {
                     width={width}
                     height={height}                
                     layout="responsive"
+                    quality={100}
                   />
                 )
 

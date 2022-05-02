@@ -15,6 +15,9 @@ module.exports = {
         'primary': 'var(--color-primary)',
         'secondary': 'var(--color-secondary)',
       },
+      spacing: {
+        "live_auction" : "var(--mt-live_auction)",
+      }
     },
   },
   plugins: [],

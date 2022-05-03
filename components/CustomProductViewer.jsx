@@ -173,7 +173,7 @@ function CustomProductViewer({ product }) {
 
       <Link href={productInfo?.purchaseLink} passHref>
         
-        <a rel="noreferrer" target={"_blank"} href={productInfo?.purchaseLink} className='w-full relative pb-[calc(100%*1)] rounded-[32px] shadow-2xl'>
+        <a rel="noreferrer" target={"_blank"} href={productInfo?.purchaseLink} className='w-full relative pb-[calc(100%*1)] rounded-[32px] shadow-productViewer'>
 
           <div className="absolute inset-0 w-full flex flex-col justify-center items-center">
 

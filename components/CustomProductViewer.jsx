@@ -173,7 +173,7 @@ function CustomProductViewer({ product }) {
 
       <Link href={productInfo?.purchaseLink} passHref>
         
-        <a rel="noreferrer" target={"_blank"} href={productInfo?.purchaseLink} className='w-full relative pb-[calc(100%*1)]'>
+        <a rel="noreferrer" target={"_blank"} href={productInfo?.purchaseLink} className='w-full relative pb-[calc(100%*1)] rounded-[32px] shadow-2xl'>
 
           <div className="absolute inset-0 w-full flex flex-col justify-center items-center">
 
@@ -182,7 +182,7 @@ function CustomProductViewer({ product }) {
               {
                 productInfo?.tokenMetadata?.animation_url != undefined ? (
 
-                  <video loop muted playsInline autoPlay  className='object-cover h-full min-w-full max-h-full object-center w-full rounded-xl  mx-auto' >
+                  <video loop muted playsInline autoPlay  className='object-cover h-full min-w-full max-h-full object-center w-full  mx-auto rounded-[32px]' >
 
                     <source src={productInfo.tokenMetadata.animation_url} />
                     <source src={productInfo.tokenMetadata.image} />
@@ -196,7 +196,7 @@ function CustomProductViewer({ product }) {
 
                   <div className='w-full h-full '>
                     <Image
-                      className='object-cover h-full w-full object-center rounded-xl'
+                      className='object-cover h-full w-full object-center rounded-[32px]'
                       src={ getOptimizedImage(productInfo?.tokenMetadata?.image,608,608) }
                       alt={productInfo?.tokenMetadata?.title}
                       layout="responsive"

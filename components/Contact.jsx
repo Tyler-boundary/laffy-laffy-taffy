@@ -55,11 +55,11 @@ function Contact() {
 
         <div className="flex flex-col items-center text-standardO">
 
-          <h2 className='text-[32px] font-black leading-[32px] text-center mb-6'>
+          <h2 className='text-[32px] font-black leading-[32px] text-center mb-12'>
             {title}
           </h2>
 
-          <p className='max-w-[568px] text-base mb-10 text-center w-full font-medium leading-[25px]'>
+          <p className='max-w-[568px] text-base mb-12 text-center w-full font-medium leading-[25px]'>
             {description}
           </p>
 

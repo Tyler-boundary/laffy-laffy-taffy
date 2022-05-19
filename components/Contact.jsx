@@ -4,10 +4,10 @@ import Grid from "../public/footer_grid.svg";
 import { arraySocialMedia } from '../helpers';
 // import LogoContact from "../public/logoContact.png";
 
-const logoFileName = '/' +process.env.NEXT_PUBLIC_CONTACT_LOGO;
+const logoFileName = '/' +process.env.NEXT_PUBLIC_FOOTER_LOGO;
 const footerImage = "/" + process.env.NEXT_PUBLIC_MAIN_IMAGE;
-const title = process.env.NEXT_PUBLIC_CONTACT_TITLE ?? "";
-const description = process.env.NEXT_PUBLIC_CONTACT_DESCRIPTION ?? "";
+const title = process.env.NEXT_PUBLIC_FOOTER_HEADLINE ?? "";
+const description = process.env.NEXT_PUBLIC_FOOTER_BODY ?? "";
 
 function Contact() {
 

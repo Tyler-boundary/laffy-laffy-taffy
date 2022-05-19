@@ -42,7 +42,7 @@ export const getServerSideProps = async () => {
 
     try {
 
-      const res = await fetch(endpoint.toString().concat(`/${process.env.NEXT_PUBLIC_MAIN_FEATURED_PRODUCT ?? "2096389b-aa71-4f03-9cd0-242d6050e964" }`));
+      const res = await fetch(endpoint.toString().concat(`/${process.env.NEXT_PUBLIC_MIDSECTION_FEATURED_PRODUCT ?? "2096389b-aa71-4f03-9cd0-242d6050e964" }`));
       const response = await res.json();
       const {error} = response;
       if(error){

@@ -1,9 +1,9 @@
 import React from 'react'
 import CustomProductViewer from './CustomProductViewer';
 
-const topText = process.env.NEXT_PUBLIC_MAIN_TOP_TEXT ?? "";
-const headline = process.env.NEXT_PUBLIC_MAIN_HEADLINE ?? "";
-const description = process.env.NEXT_PUBLIC_MAIN_DESCRIPTION ?? "";
+const topText = process.env.NEXT_PUBLIC_HERO_SECTION_BODY ?? "";
+const headline = process.env.NEXT_PUBLIC_MIDSECTION_HEADLINE ?? "";
+const description = process.env.NEXT_PUBLIC_MIDSECTION_DESCRIPTION ?? "";
 
 function Main({featuredProduct}) {
   return (

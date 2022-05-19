@@ -15,6 +15,10 @@ module.exports = {
         'primary': 'var(--color-primary)',
         'secondary': 'var(--color-secondary)',
       },
+      fontWeight : {
+        "headline" : "var(--fw-headine)",
+        "body": "var(--fw-body)"
+      },
       boxShadow: {
         'productViewer': "0px 10px 40px 0px #00113326 "
       },

@@ -54,7 +54,7 @@ const fontWeight = {
 export const assignColors = () => {
 
   const font_weight_headline = fontWeight[process.env.NEXT_PUBLIC_FONT_WEIGHT_HEADLINE.replaceAll('"',"")] ?? 700;
-  const font_weight_body = fontWeight[process.env.NEXT_PUBLIC_FONT_WEIGHT_BODY.replaceAll('"',"")] ?? 400;
+  const font_weight_body = fontWeight[process.env.NEXT_PUBLIC_FONT_WEIGHT_BODY.replaceAll('"',"")] ?? 500;
 
   const currentStandardMode = standardModeColors[process.env.NEXT_PUBLIC_STANDARD_MODE.replaceAll('"',"")] ?? "white";
   const currentStandardOriginal = standardOriginalColors[process.env.NEXT_PUBLIC_STANDARD_MODE.replaceAll('"',"")] ?? "black";

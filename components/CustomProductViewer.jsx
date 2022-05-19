@@ -253,7 +253,7 @@ function CustomProductViewer({ product }) {
             
           </p>
 
-          <p className="text-xs font-medium leading-[14.4px] text-right">
+          <p className="text-xs font-body leading-[14.4px] text-right">
             {
               saleType === "Auction" || saleType === "Open edition"  ? (
 
@@ -273,7 +273,7 @@ function CustomProductViewer({ product }) {
 
         <div className='w-full flex flex-col space-y-2 items-start'>
 
-          <h2 className="text-lg leading-[21px] font-medium uppercase">
+          <h2 className="text-lg leading-[21px] font-body uppercase">
             <Link href={productInfo?.purchaseLink}>
               <a rel="noreferrer" target={"_blank"} href={productInfo?.purchaseLink}>
                 {productInfo?.tokenMetadata?.name}
@@ -302,7 +302,7 @@ function CustomProductViewer({ product }) {
             </Link>
           </h3> */}
 
-          <p className='font-medium text-lg leading-[22px]'>
+          <p className='font-body text-lg leading-[22px]'>
 
             {
               saleType !== "Auction" ? (

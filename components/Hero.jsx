@@ -92,7 +92,7 @@ const Hero = () => {
 
             <a 
               href={cta_link}
-              className="px-[53.5px] leading-[14px] bg-primary py-[13px] text-center text-secondary buttonShape text-[12px] font-medium"
+              className="px-[53.5px] leading-[14px] bg-primary py-[13px] text-center text-secondary buttonShape text-[12px] font-body"
             >
             {cta_text}
 

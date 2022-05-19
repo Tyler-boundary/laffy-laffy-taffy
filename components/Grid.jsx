@@ -176,7 +176,7 @@ const Grid = ({ products, featuredProduct}) => {
                   >
   
                     <p
-                      className="cursor-pointer text-xs font-medium"
+                      className="cursor-pointer text-xs font-body"
                       onClick={handleClickFilter}
                       id={filter.value}
                     >

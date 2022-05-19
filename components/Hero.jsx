@@ -59,8 +59,18 @@ const Hero = () => {
         <div className="absolute inset-0 w-full h-full max-h-full">
     
           <div className="relative w-full h-full max-h-full">
+            {process.env.NEXT_PUBLIC_HERO_VIDEO ? (
 
-            <Image
+              <video loop muted playsInline autoPlay  className="object-cover !w-full h-full" >
+
+                <source src={process.env.NEXT_PUBLIC_HERO_VIDEO} />
+                <source src={process.env.NEXT_PUBLIC_HERO_VIDEO} />
+                <p>Your browser Dont support videos</p>
+                
+              </video>
+                          
+            ) : (
+              <Image
               src={currentImage}
               alt={currentImage.replace("/","")}
               className="object-cover min-h-full"
@@ -68,6 +78,7 @@ const Hero = () => {
               quality={100}
               priority={true}
             />
+            )}
 
           </div>
 

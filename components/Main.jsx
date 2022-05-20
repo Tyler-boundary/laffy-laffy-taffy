@@ -28,7 +28,7 @@ function Main({featuredProduct}) {
           </p>
         </div>
 
-        <div className='block w-full lg:min-w-[320px] lg:w-[35%] lg:max-w-[573.3px]'>
+        <div className='block w-full lg:min-w-[320px] lg:w-[36.5%] lg:max-w-[573.3px]'>
           <CustomProductViewer product={featuredProduct} />
         </div>
         

@@ -182,7 +182,7 @@ function CustomProductViewer({ product }) {
               {
                 productInfo?.tokenMetadata?.animation_url != undefined ? (
 
-                  <video loop muted playsInline autoPlay  className='object-cover h-full min-w-full max-h-full object-center w-full  mx-auto rounded-[32px]' >
+                  <video loop muted playsInline autoPlay preload  className='object-cover h-full min-w-full max-h-full object-center w-full  mx-auto rounded-[32px]' >
 
                     <source src={productInfo.tokenMetadata.animation_url} />
                     <source src={productInfo.tokenMetadata.image} />

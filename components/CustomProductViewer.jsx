@@ -180,9 +180,10 @@ function CustomProductViewer({ product }) {
             <div className='relative h-full w-full flex max-h-full justify-center max-w-full transition-transform duration-200 ease-[ease-in-out] md:hover:scale-105'>
 
               {
+
                 productInfo?.tokenMetadata?.animation_url != undefined ? (
 
-                  <video loop muted playsInline autoPlay  className='object-cover h-full min-w-full max-h-full object-center w-full  mx-auto rounded-[32px]' >
+                  <video loop muted playsInline autoPlay preload="auto" className='object-cover h-full min-w-full max-h-full object-center w-full  mx-auto rounded-[32px]' >
 
                     <source src={productInfo.tokenMetadata.animation_url} />
                     <source src={productInfo.tokenMetadata.image} />
@@ -253,7 +254,7 @@ function CustomProductViewer({ product }) {
             
           </p>
 
-          <p className="text-xs font-medium leading-[14.4px] text-right">
+          <p className="text-xs font-body leading-[14.4px] text-right">
             {
               saleType === "Auction" || saleType === "Open edition"  ? (
 
@@ -273,7 +274,7 @@ function CustomProductViewer({ product }) {
 
         <div className='w-full flex flex-col space-y-2 items-start'>
 
-          <h2 className="text-lg leading-[21px] font-medium uppercase">
+          <h2 className="text-lg leading-[21px] font-body uppercase">
             <Link href={productInfo?.purchaseLink}>
               <a rel="noreferrer" target={"_blank"} href={productInfo?.purchaseLink}>
                 {productInfo?.tokenMetadata?.name}
@@ -302,7 +303,7 @@ function CustomProductViewer({ product }) {
             </Link>
           </h3> */}
 
-          <p className='font-medium text-lg leading-[22px]'>
+          <p className='font-body text-lg leading-[22px]'>
 
             {
               saleType !== "Auction" ? (

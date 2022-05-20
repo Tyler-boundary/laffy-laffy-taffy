@@ -4,10 +4,10 @@ import Grid from "../public/footer_grid.svg";
 import { arraySocialMedia } from '../helpers';
 // import LogoContact from "../public/logoContact.png";
 
-const logoFileName = '/' +process.env.NEXT_PUBLIC_CONTACT_LOGO;
+const logoFileName = '/' +process.env.NEXT_PUBLIC_FOOTER_LOGO;
 const footerImage = "/" + process.env.NEXT_PUBLIC_MAIN_IMAGE;
-const title = process.env.NEXT_PUBLIC_CONTACT_TITLE ?? "";
-const description = process.env.NEXT_PUBLIC_CONTACT_DESCRIPTION ?? "";
+const title = process.env.NEXT_PUBLIC_FOOTER_HEADLINE ?? "";
+const description = process.env.NEXT_PUBLIC_FOOTER_BODY ?? "";
 
 function Contact() {
 
@@ -55,11 +55,11 @@ function Contact() {
 
         <div className="flex flex-col items-center text-standardO">
 
-          <h2 className='text-[32px] font-black leading-[32px] text-center mb-12'>
+          <h2 className='text-[32px] font-headline leading-[32px] text-center mb-12'>
             {title}
           </h2>
 
-          <p className='max-w-[568px] text-base mb-12 text-center w-full font-medium leading-[25px]'>
+          <p className='max-w-[568px] text-base mb-12 text-center w-full font-body leading-[25px]'>
             {description}
           </p>
 

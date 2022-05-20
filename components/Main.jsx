@@ -29,7 +29,11 @@ function Main({featuredProduct}) {
         </div>
 
         <div className='block w-full lg:min-w-[320px] lg:w-[36.5%] lg:max-w-[573.3px]'>
-          <CustomProductViewer product={featuredProduct} />
+          
+            { Object.keys(featuredProduct) > 1 && (
+              <CustomProductViewer product={featuredProduct} />
+            ) }
+          
         </div>
         
 

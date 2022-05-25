@@ -70,7 +70,7 @@ const Navbar = () => {
               style={ {width: width} }
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.bitski.com/"
+              href={process.env.NEXT_PUBLIC_NAVBAR_LOGO_LINK}
             >
 
               {

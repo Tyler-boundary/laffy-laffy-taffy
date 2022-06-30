@@ -75,7 +75,7 @@ const Hero = () => {
   return (
     <>
 
-      <section className="mt-[88px] md:mt-[120px] h-[368px] md:h-[500px] lg:h-[560px] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative">
+      <section className="h-[368px] md:h-[500px] lg:h-[560px] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative">
 
         <div className="absolute inset-0 w-full h-full max-h-full">
     

@@ -178,7 +178,9 @@
   }
 
   @if not( $BGoogleFont == "" ) and not($BGoogleURL == "") {
-    @import url($bodyFontGoogleURL);
+    @if not ($BGoogleURL == $HGoogleURL){
+      @import url($bodyFontGoogleURL);
+    }    
     body{
       font-family: $bodyFontGoogleFont;
     }

@@ -15,9 +15,9 @@ module.exports = {
       $headlineFontLocal: "${process.env.NEXT_PUBLIC_HEADLINES_FONT_FAMILY}";
       $bodyFontLocal: "${process.env.NEXT_PUBLIC_BODY_FONT_FAMILY}";
       $headlineFontGoogleURL: "${process.env.NEXT_PUBLIC_GOOGLEFONT_HEADLINES_URL}";
-      $headlineFontGoogleFont: "${process.env.NEXT_PUBLIC_GOOGLEFONT_HEADLINES_FONT_FAMILY}";
+      $headlineFontGoogleFont: ${process.env.NEXT_PUBLIC_GOOGLEFONT_HEADLINES_FONT_FAMILY};
       $bodyFontGoogleURL: "${process.env.NEXT_PUBLIC_GOOGLEFONT_BOY_URL}";
-      $bodyFontGoogleFont: "${process.env.NEXT_PUBLIC_GOOGLEFONT_BOY_FONT_FAMILY}";
+      $bodyFontGoogleFont: ${process.env.NEXT_PUBLIC_GOOGLEFONT_BOY_FONT_FAMILY};
       $hola: ${process.env.NEXT_PUBLIC_GOOGLEFONT_BOY_FONT_FAMILY};
       $buttonShape: ${ process.env.NEXT_PUBLIC_BUTTON_STYLE != "" ? process.env.NEXT_PUBLIC_BUTTON_STYLE : "none" };
     `,

@@ -19,8 +19,8 @@ const Navbar = () => {
       image.src = logoFileName;
       image.onload = () => {
         console.log(image);
-        setHeight(image.height);
-        setWidth(image.width);
+        setHeight(image.height*.75);
+        setWidth(image.width*.75);
         setIsLoadImage(true);
       }
       

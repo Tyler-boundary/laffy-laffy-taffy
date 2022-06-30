@@ -32,38 +32,38 @@ const Navbar = () => {
 
     <nav className="sticky top-0 z-40 bg-NavBar w-full flex flex-col justify-center items-center py-6 md:py-10">
 
-      <div className="max-w-[1960px] w-full pr-4 md:pr-10 lg:pr-20 flex items-center justify-end">
+      <div className="max-w-[1960px] w-full flex items-center justify-end">
 
         {/* <div className="max-w-max space-x-[51px] md:space-x-0 md:max-w-[431px] lg:max-w-[700px] w-full flex items-center justify-between"> */}
         <div className="w-full flex items-center">
 
-        <style jsx>{`
+        {/* <style jsx>{`
 
           .max-w-navBar {
             max-width: calc(50% +${width/2}px);
           }
 
           .w-navBar{
-            width: calc(50vw +${width/2}px - 14px);
+            width: calc(50vw +${width/2}px );
           }
 
           @media(min-width: 768px){
             .w-navBar{
-              width: calc(50vw +${width/2}px - 38px);
+              width: calc(50vw +${width/2}px);
             }
           }
 
           @media(min-width: 1024px){
             .w-navBar{
-              width: calc(50vw +${width/2}px - 78px);
+              width: calc(50vw +${width/2}px);
             }
           }
 
-        `}</style>
+        `}</style> */}
 
         {/* <div className="w-[calc(50vw+152px-16px)] md:w-[calc(50vw+152px-40px)] lg:w-[calc(50vw+152px-80px)] max-w-[calc(50%+150px)] flex items-center justify-between ml-auto"> */}
 
-          <div className="w-navBar max-w-navBar flex items-center justify-between ml-auto">
+          <div className="w-full flex items-center justify-center">
 
             <a 
               className="block max-w-[60%] w-max sm:max-w-full" 
@@ -89,16 +89,16 @@ const Navbar = () => {
 
               }
 
-              </a>
+            </a>
 
-              <a 
+              {/* <a 
               target="_blank"
               rel="noopener noreferrer"
               href={process.env.NEXT_PUBLIC_NAVBAR_WALLET_LINK} 
               className=" py-[9.5px] px-[19px] md:px-[62.5px] leading-[13px] bg-primary md:py-[13.5px] text-center text-secondary buttonShape text-[12px] font-body"
               >
               {process.env.NEXT_PUBLIC_NAVBAR_WALLET_TEXT}
-              </a>
+              </a> */}
           </div>
 
         </div>

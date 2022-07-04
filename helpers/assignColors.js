@@ -11,7 +11,7 @@ const standardOriginalColors = {
 const primaryColor = {
 
   Pink : "#FF3567",
-  Purple : "#7A73FC",
+  Purple : "#FF3567",
   Yellow: "#FCC02A",
   Blue : "#1586F6",
   Green: "#12AC12",
@@ -28,7 +28,7 @@ const primaryColor = {
 const secondaryColor = {
 
   Pink : "#FF3567",
-  Purple : "#7A73FC",
+  Purple : "#FF3567",
   Yellow: "#FCC02A",
   Blue : "#1586F6",
   Green: "#12AC12",

@@ -86,7 +86,7 @@ export const CustomClaimViewer = ({claimCode}) => {
           </h2>
 
           <h3 className="text-sm">
-            <a className='flex items-center space-x-2'>
+            <a rel="noreferrer" target={"_blank"} href={claimCode?.tokenMetadata[0].external_url} className='flex items-center space-x-2'>
 
               <Image
                 className='rounded-full object-cover '

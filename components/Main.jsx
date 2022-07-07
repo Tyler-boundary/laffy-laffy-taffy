@@ -1,4 +1,5 @@
 import React from 'react'
+import { CustomClaimViewer } from './CustomClaimViewer';
 import CustomProductViewer from './CustomProductViewer';
 
 const topText = process.env.NEXT_PUBLIC_HERO_SECTION_BODY ?? "";
@@ -6,7 +7,6 @@ const headline = process.env.NEXT_PUBLIC_MIDSECTION_HEADLINE ?? "";
 const description = process.env.NEXT_PUBLIC_MIDSECTION_DESCRIPTION ?? "";
 
 function Main({featuredProduct}) {
-
   return (
 
     <section className='w-full pb-10 lg:pb-0 max-w-[1960px] px-4 md:px-10 lg:px-20 mx-auto h-full flex flex-col justify-center items-center pt-20 md:pt-[120px]'>
@@ -31,7 +31,7 @@ function Main({featuredProduct}) {
         <div className='block w-full lg:min-w-[320px] lg:w-[36.5%] lg:max-w-[573.3px]'>
           
             { Object.keys(featuredProduct).length > 1 && (
-              <CustomProductViewer product={featuredProduct} />
+              <CustomClaimViewer claimCode={featuredProduct} />              
             ) }
           
         </div>

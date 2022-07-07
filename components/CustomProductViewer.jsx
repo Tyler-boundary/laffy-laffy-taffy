@@ -92,7 +92,6 @@ function CustomProductViewer({ product }) {
     const settings = `width=${width},height=${height},quality=100,fit=cover,onerror=redirect,f=auto/tokens-raw/`
     const token = splitUrl[splitUrl.length - 2]+"/"+splitUrl[splitUrl.length - 1];
     return domain + settings + token;
-
     
   }
 

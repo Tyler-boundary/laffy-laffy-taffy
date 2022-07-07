@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { hash } from '../helpers';
 import CustomProductViewer from "./CustomProductViewer";
+import { CustomClaimViewer } from "./CustomClaimViewer";
 
 
 // const gridTitle = process.env.NEXT_PUBLIC_GRID_TITLE;
@@ -208,7 +209,7 @@ const Grid = ({ products, featuredProduct}) => {
 
                 if(Object.entries(item).length > 1){
                   return (
-                    <CustomProductViewer product={item} key={hash(item.id)}/>
+                    <CustomClaimViewer claimCode={item} key={hash(item.claimCode.id)}/>
                   )
                 }else{
                   console.log(`The id ${item.id} doesn't exists or is wrong`);

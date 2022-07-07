@@ -9,7 +9,6 @@ const Navbar = () => {
   const [height, setHeight] = useState(0);
   const [width, setWidth] = useState(0);
   const [isLoadImage, setIsLoadImage] = useState(false);
-  console.log(width);
   useEffect(() => {
 
     if(logoFileName != "/undefined"){
@@ -18,7 +17,6 @@ const Navbar = () => {
       image.classList.add("w-full","h-full");
       image.src = logoFileName;
       image.onload = () => {
-        console.log(image);
         setHeight(image.height*.50);
         setWidth(image.width*.50);
         setIsLoadImage(true);

@@ -49,7 +49,12 @@ export const getServerSideProps = async () => {
         return {};
       }else{
         const {product:featured_product} = response;
-        return featured_product;      
+        if(featured_product){
+          return featured_product;
+        }
+
+        return response;
+        
       }
 
     } catch (error) {
@@ -65,7 +70,6 @@ export const getServerSideProps = async () => {
     const res = await fetch(endpoint+"?all=true&limit=100&offset=0");
     const data = await res.json()
     const {products} = data;
-    console.log(products.map(p => p.id));
     return products;
     
   }
@@ -98,14 +102,20 @@ export const getServerSideProps = async () => {
       keys.forEach(key => validCombination += `${key.length}` )
 
       if(validCombination === "844412"){
+
         const request = await fetch(endpoint.concat(`/${productId}`));
         const response = await request.json();
         const {error} = response;
+
         if(error){
           return {id};
-        }else{
+        }
+        
+        if(response.product){
           return response.product;      
         }
+
+        return response;
         
       }
 
@@ -132,7 +142,6 @@ export const getServerSideProps = async () => {
   }
 
   const [featured_product,products] = await Promise.all([featuredProduct(),specificProducts()]);
-  
   return {
     props: {
       featuredProduct: featured_product,

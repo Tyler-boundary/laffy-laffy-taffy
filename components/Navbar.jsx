@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
 
-    <nav className="sticky top-0 z-40 bg-NavBar w-full flex flex-col justify-center items-center py-3 md:py-5">
+    <nav className="sticky top-0 z-40 bg-[#8461d7] w-full flex flex-col justify-center items-center py-3 md:py-5">
 
       <div className="max-w-[1960px] w-full flex items-center justify-end">
 

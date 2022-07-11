@@ -75,7 +75,8 @@ const Hero = () => {
   return (
     <>
 
-      <section className="h-[368px] md:h-[500px] lg:h-[560px] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative">
+      {/* <section className="h-[368px] md:h-[500px] lg:h-[560px] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative"> */}
+      <section className="h-[calc(100vh-114.5px)] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative">
 
         <div className="absolute inset-0 w-full h-full max-h-full">
     
@@ -107,13 +108,18 @@ const Hero = () => {
 
         <div className="absolute inset-0 w-full h-full items-center flex flex-col justify-center lg:justify-start">
 
-            <h1 className="max-w-[343px] md:max-w-[560px] lg:max-w-[955px] px-1 md:px-0 w-full text-5xl text-[52px] leading-[52px] md:text-[60px] md:leading-[60px] lg:text-[64px] lg:leading-[64px] text-[#FF3567] font-headline text-center mb-6 md:mb-10 lg:pt-[180px]">
+            <h1 className="max-w-[343px] md:max-w-[560px] lg:max-w-[955px] px-1 md:px-0 w-full text-5xl text-[52px] leading-[52px] md:text-[60px] md:leading-[60px] lg:text-[64px] lg:leading-[64px] text-[#8461d7] font-headline text-center mb-6 md:mb-10 lg:pt-[180px]">
               {title}
+              <br />
+              <span className="text-[47px]">
+                {process.env.NEXT_PUBLIC_HERO_SECTION_SUBHEADLINE}
+              </span>
+              
             </h1>
-
+            
             <a 
               href={cta_link}
-              className="px-[53.5px] leading-[14px] bg-primary py-[13px] text-center text-secondary buttonShape text-[12px] font-body"
+              className="!hidden px-[53.5px] leading-[14px] bg-primary py-[13px] text-center text-secondary buttonShape text-[12px] font-body"
               onClick = {e => {e.preventDefault(); scrollToTargetAdjusted()}}
             >
             {cta_text}

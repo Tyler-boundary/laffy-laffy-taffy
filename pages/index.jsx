@@ -21,14 +21,7 @@ const Home = ({featuredProduct,products}) => {
         <link rel="shortcut icon" href={`/${process.env.NEXT_PUBLIC_FAVICON}`} />
       </Head>
       
-      <Hero />
-
-      <Main featuredProduct={featuredProduct}/>
-      
-      <Grid products={products} featuredProduct={featuredProduct}/>
-
-      <Contact />
-      
+      <Hero />      
     </>
   );
 

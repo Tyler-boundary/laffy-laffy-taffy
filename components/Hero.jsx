@@ -76,7 +76,7 @@ const Hero = () => {
     <>
 
       {/* <section className="h-[368px] md:h-[500px] lg:h-[560px] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative"> */}
-      <section className="h-[calc(100vh-114.5px)] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative">
+      <section className="h-[calc(100vh-151px)] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative">
 
         <div className="absolute inset-0 w-full h-full max-h-full">
     

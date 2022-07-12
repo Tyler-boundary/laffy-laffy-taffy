@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
 
-    <nav className="sticky top-0 z-40 bg-[#5229D1] w-full flex flex-col justify-center items-center py-5">
+    <nav className="sticky top-0 z-40 bg-[#8461D7] w-full flex flex-col justify-center items-center py-5">
 
       <div className="max-w-[1960px] w-full flex items-center justify-end">
 
@@ -64,7 +64,7 @@ const Navbar = () => {
           <div className="w-full flex items-center justify-center">
 
             <a 
-              className="block max-w-[133px]" 
+              className="block max-w-[146.3px]" 
               style={ {width: width} }
               target="_blank"
               rel="noopener noreferrer"

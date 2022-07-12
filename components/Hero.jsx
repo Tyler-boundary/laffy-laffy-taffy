@@ -108,10 +108,10 @@ const Hero = () => {
 
         <div className="absolute inset-0 w-full h-full items-center flex flex-col justify-center md:justify-start">
 
-            <h1 className="max-w-[480px] md:max-w-[560px] lg:max-w-[955px] px-1 md:px-0 w-full text-4xl text-[52px] leading-[52px] md:text-[60px] md:leading-[60px] lg:text-[64px] lg:leading-[64px] text-[#8461d7] font-headline text-center mb-6 md:mb-10 md:pt-[180px]">
+            <h1 className="max-w-[480px] md:max-w-[560px] lg:max-w-[955px] px-1 md:px-0 w-full text-[39.6px]  leading-[52px] md:text-[66px] md:leading-[60px] lg:text-[70.4px] lg:leading-[64px] text-[#5229D1] font-headline text-center mb-6 md:mb-10 md:pt-[180px]">
               {title}
               <br />
-              <span className="text-3xl md:text-[47px]">
+              <span className="text-[33px] md:text-[51.7px]">
                 {process.env.NEXT_PUBLIC_HERO_SECTION_SUBHEADLINE}
               </span>
               

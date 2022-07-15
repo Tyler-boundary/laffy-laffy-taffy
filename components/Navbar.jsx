@@ -66,9 +66,6 @@ const Navbar = () => {
             <a 
               className="block max-w-[146.3px]" 
               style={ {width: width} }
-              target="_blank"
-              rel="noopener noreferrer"
-              href={process.env.NEXT_PUBLIC_NAVBAR_LOGO_LINK}
             >
 
               {

@@ -5,8 +5,6 @@ import Link from "next/link";
 
 export const CustomClaimViewer = ({filename}) => {
   
-  console.log(filename);
-
   return (
     
     <div className='w-full flex flex-col items-start select-none'>

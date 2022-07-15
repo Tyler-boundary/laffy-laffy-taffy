@@ -12,7 +12,6 @@ const Grid = ({gallery}) => {
 
           gallery.map((item,i) => {
 
-            console.log(item);
             return (
               <CustomClaimViewer filename={item} key={i}/>               
             )

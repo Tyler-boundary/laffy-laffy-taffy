@@ -119,7 +119,7 @@ const Hero = () => {
             
             <a 
               href={cta_link}
-              className="px-[37.5px] leading-[14px] py-[13px] text-center text-secondary bg-[#4D2BC9] rounded-[4px] text-[12px] font-body font-matter_sq"
+              className="px-[37.5px] leading-[14px] py-[13px] text-center text-secondary bg-[#DAA1FF] rounded-[4px] text-[12px] font-body font-matter_sq"
               onClick = {e => {e.preventDefault(); scrollToTargetAdjusted()}}
             >
               CLAIM MY NFT!

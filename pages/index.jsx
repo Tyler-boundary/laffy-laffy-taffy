@@ -39,7 +39,7 @@ export const getStaticProps = async () => {
 
   let filenames;
   
-  filenames = fs.readdirSync('public/laffytaffy');  
+  filenames = fs.readdirSync('public/laffyTaffy');  
   
   return {
     props: {

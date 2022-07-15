@@ -1,7 +1,7 @@
 import { CustomClaimViewer } from "./CustomClaimViewer";
 
 const Grid = ({gallery}) => {
-
+  console.log(gallery);
   return (
 
     <section id="grid" className="pt-10 md:pt-[145px] pb-20 md:pb-[120px] px-4 md:px-10 lg:px-20 max-w-[1960px] mx-auto w-full">

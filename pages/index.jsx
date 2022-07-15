@@ -23,9 +23,12 @@ const Home = ({gallery}) => {
         <link rel="shortcut icon" href={`/${process.env.NEXT_PUBLIC_FAVICON}`} />
       </Head>
       
-      <Hero />      
+      <Hero />    
+
       <Main image={gallery[0]}/>  
+      
       <Grid gallery={gallery}></Grid>
+      <Contact/>
 
     </>
   );

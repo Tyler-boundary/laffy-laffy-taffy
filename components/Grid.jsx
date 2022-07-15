@@ -1,7 +1,7 @@
 import { CustomClaimViewer } from "./CustomClaimViewer";
 
 const Grid = ({gallery}) => {
-  console.log(gallery);
+  
   const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
   return (
 
@@ -12,8 +12,6 @@ const Grid = ({gallery}) => {
         {
           
           range(0,120,1).map((item,i) => {
-            console.log(`/laffyTaffy/${i}.png`);
-            console.log(item);
 
             if(i != 1 && i != 0) {
 

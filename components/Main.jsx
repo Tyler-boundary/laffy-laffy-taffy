@@ -7,7 +7,7 @@ const headline = process.env.NEXT_PUBLIC_MIDSECTION_HEADLINE ?? "";
 const description = process.env.NEXT_PUBLIC_MIDSECTION_DESCRIPTION ?? "";
 
 function Main({image}) {
-  console.log(image);
+  
   return (
 
     <section className='w-full pb-10 lg:pb-0 max-w-[1960px] px-4 md:px-10 lg:px-20 mx-auto h-full flex flex-col justify-center items-center pt-20 md:pt-[120px]'>

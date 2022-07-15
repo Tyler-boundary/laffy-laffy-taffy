@@ -14,6 +14,18 @@
 
 @import "./mixins";
 
+@font-face {
+  font-family: "Matter SQ";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/matter_sq/Matter SQ Regular.woff") format("woff");
+  font-display: swap;
+}
+
+.font-matter_sq{
+  font-family: "Matter SQ";
+}
+
 html {
   @apply scroll-smooth;
 }

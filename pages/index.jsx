@@ -1,3 +1,6 @@
+import path from "path";
+import fs from 'fs';
+
 import Head from "next/head";
 import Hero from "../components/Hero";
 import Grid from "../components/Grid";
@@ -6,8 +9,7 @@ import { assignColors } from "../helpers";
 import Contact from "../components/Contact";
 import Main from "../components/Main";
 
-
-const Home = ({featuredProduct,products}) => {
+const Home = ({featuredProduct,products,gallery}) => {
 
   useEffect(() => {
     assignColors();
@@ -22,6 +24,9 @@ const Home = ({featuredProduct,products}) => {
       </Head>
       
       <Hero />      
+      <Main image={gallery[0]}/>  
+      <Grid gallery={gallery}></Grid>
+
     </>
   );
 
@@ -135,10 +140,15 @@ export const getServerSideProps = async () => {
   }
 
   const [featured_product,products] = await Promise.all([featuredProduct(),specificProducts()]);
+
+  const filenames = fs.readdirSync('public/laffytaffy')
+  console.log(filenames);
+  
   return {
     props: {
       featuredProduct: featured_product,
-      products
+      products,
+      gallery: filenames
     },
   };
 

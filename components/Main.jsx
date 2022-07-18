@@ -21,7 +21,7 @@ function Main({image}) {
           </h2>
 
           <h3 className='text- md:text-[36px] text-start font-body md:font-light leading-[18px] md:leading-[38.4px]'>
-            Retired joke NFTs drop 7/20! Connect <br></br> your wallet and explore the site so you&apos;re  ready <br></br> to mint yours . First come, first served.
+            Retired joke NFTs drop 7/20! Connect <br></br> your wallet and explore the site so you&apos;re  ready to mint yours. First come, first served.
           </h3>
 
         </div>

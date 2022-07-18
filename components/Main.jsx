@@ -33,7 +33,7 @@ function Main({image}) {
           </h2>
 
           <h3 className='text- md:text-[36px] lowercase text-start font-body md:font-light  leading-[18px] md:leading-[38.4px]'>
-            Check out our collection of 120 NFTs <br></br> featuring classic joke, and claim your favorite! <br></br> All are free to mint.
+            Check out our collection of 120 NFTs <br></br> featuring classic jokes, and claim your favorite! <br></br> All are free to mint.
           </h3>
 
         </div>
@@ -59,7 +59,7 @@ function Main({image}) {
             THESE Classic lols <br></br> are now nfts
           </h2>
           <p className='text-base md:text-[27px] leading-[120%] font-extralight lg:max-w-[487px] lg:mx-0 md:mx-auto lg:text-left md:text-center  md:max-w-[552px]'>
-            We all love the punderful jokes that Laffy <br></br> Taffy is know for. Now, some jokes are <br></br> retired from the wrappers and converted <br></br> into these playful, vibrant, trading <br></br> card-inspired NFTs.
+            We all love the punderful jokes that Laffy <br></br> Taffy is known for. Now, some jokes are <br></br> retired from the wrappers and converted <br></br> into these playful, vibrant, trading <br></br> card-inspired NFTs.
           </p>
         </div>
 

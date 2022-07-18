@@ -16,7 +16,7 @@ function Main({image}) {
         
         <div className="flex flex-col space-y-4 md:space-y-10 w-full">
 
-          <h2 className="text-[30px] md:text-[65px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[28px] md:leading-[38.4px]">
+          <h2 className="text-[18px] md:text-[34px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
             1. &nbsp; &nbsp;Connect your wallet
           </h2>
 
@@ -28,7 +28,7 @@ function Main({image}) {
 
         <div className="flex flex-col space-y-4 md:space-y-10 w-full">
 
-          <h2 className="text-[30px] md:text-[65px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[28px] md:leading-[38.4px]">
+          <h2 className="text-[18px] md:text-[34px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
             2. &nbsp; &nbsp;Get Your mft
           </h2>
 
@@ -40,7 +40,7 @@ function Main({image}) {
 
         <div className="flex flex-col space-y-4 md:space-y-10 w-full">
 
-          <h2 className="text-[30px] md:text-[65px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[28px] md:leading-[38.4px]">
+          <h2 className="text-[18px] md:text-[34px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
             3. &nbsp; &nbsp;Laff
           </h2>
 

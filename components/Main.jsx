@@ -12,9 +12,9 @@ function Main({image}) {
 
     <section className='w-full pb-10 lg:pb-0 max-w-[1960px] px-4 md:px-10 lg:px-20 mx-auto h-full flex flex-col justify-center items-center pt-20 md:pt-[120px]'>
 
-      <div className='w-full justify-center items-center mb-20 md:mb-[120px] flex flex-col space-y-8 md:space-y-20 max-w-max  md:max-w-[652px] mx-auto'>
+      <div className='w-full justify-center items-center mb-20 md:mb-[120px] flex flex-col space-y-6 md:space-y-12 max-w-max  md:max-w-[652px] mx-auto'>
         
-        <div className="flex flex-col space-y-4 md:space-y-10 w-full">
+        <div className="flex flex-col space-y-4 md:space-y-8 w-full">
 
           <h2 className="text-[18px] md:text-[34px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
             1. &nbsp; &nbsp;Connect your wallet

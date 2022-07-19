@@ -18,7 +18,7 @@ function Main({image}) {
         <div className="flex flex-col space-y-4 md:space-y-8 w-full">
 
           <h2 className="text-[26px] md:text-[54px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
-            1. &nbsp; &nbsp;Connect your wallet
+            1. &nbsp; &nbsp;Click to claim
           </h2>
 
           <p className='text-lg md:text-[30px] text-start font-body md:font-light leading-[18px] md:leading-[38.4px]'>

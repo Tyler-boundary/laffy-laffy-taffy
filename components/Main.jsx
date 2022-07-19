@@ -68,7 +68,7 @@ function Main({image}) {
           <h2 className='text-[32px] leading-[32px] md:text-[60px] font-headline md:font-black md:max-w-[552px] md:mx-auto md:text-center lg:text-left lg:mx-0 lg:max-w-[600px] md:leading-[52px] mb-4 md:mb-6 text-[#4E1DD0]'>
             THESE Classic lols <br></br> are now nfts
           </h2>
-          <p className='text-base md:text-[27px] leading-[120%] font-extralight lg:max-w-[487px] lg:mx-0 md:mx-auto lg:text-left md:text-center  md:max-w-[552px]'>
+          <p className='text-base md:text-[27px] leading-[120%] font-extralight lg:max-w-[487px] lg:mx-0 md:mx-auto text-left'>
             We all love the punderful jokes that Laffy Taffy is known for. Now,15 jokes have been retired from the wrappers and converted into these unique, limited edition NFTs.
             <br/>
             Check out the full collection below.

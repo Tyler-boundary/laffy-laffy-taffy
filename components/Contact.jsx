@@ -62,9 +62,9 @@ function Contact() {
             An NFHehehehe
           </h2>
 
-          <p className='max-w-[568px] text-base mb-12 text-center w-full font-body leading-[25px]'>
+          <a target="_blank" href="https://www.laffytaffy.com/nft-terms-of-use" rel="noopener noreferrer" className='max-w-[568px] text-base mb-12 text-center w-full font-body leading-[25px]'>
             {description}
-          </p>
+          </a>
 
           <div className="w-full flex max-w-max mx-auto items-center space-x-4 md:space-x-8">
 

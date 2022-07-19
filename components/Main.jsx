@@ -22,7 +22,7 @@ function Main({image}) {
           </h2>
 
           <p className='text-lg md:text-[30px] text-start font-body md:font-light leading-[18px] md:leading-[38.4px]'>
-            Click the “Claim My NFT” button above to start the minting process. NFTs will be given away at random — first come, first served.
+            Click the “Claim My NFT” button to start the minting process. NFTs will be given away at random — first come, first served.
           </p>
 
         </div>

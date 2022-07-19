@@ -70,6 +70,7 @@ function Main({image}) {
           </h2>
           <p className='text-base md:text-[27px] leading-[120%] font-extralight lg:max-w-[487px] lg:mx-0 md:mx-auto lg:text-left md:text-center  md:max-w-[552px]'>
             We all love the punderful jokes that Laffy Taffy is known for. Now,15 jokes have been retired from the wrappers and converted into these unique, limited edition NFTs.
+            <br/>
             Check out the full collection below.
           </p>
         </div>

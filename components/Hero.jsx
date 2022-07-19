@@ -109,17 +109,17 @@ const Hero = () => {
         <div className="absolute inset-0 w-full h-full items-center flex flex-col justify-center md:justify-start">
 
             <h1 className="max-w-[480px] md:max-w-[560px] lg:max-w-[955px] px-1 md:px-0 w-full text-[47.52px]  leading-[52px] md:text-[79.2px] md:leading-[60px] lg:text-[84.48px] lg:leading-[64px] text-[#5229D1] font-headline text-center mb-6 md:mb-10 md:pt-[120px]">
-              GRAB A LAFFY TAFFY NTF!
+              GRAB A LAFFY TAFFY NFT!
               <br />
               <span className="text-[39.6px] md:text-[62.04px]">
-                Minting is now open (and free)
+              Minting is now live (and free).
               </span>
               
             </h1>
             
             <a 
               href={cta_link}
-              className="px-[37.5px] leading-[14px] py-[13px] text-center text-secondary bg-[#8461D7] rounded-[4px] text-[18px] tracking-[.04em] font-light"
+              className="px-[37.5px] leading-[14px] py-[13px] text-center text-secondary bg-[#EA6354] rounded-[4px] text-[22px] tracking-[.04em] font-light"
               onClick = {e => {e.preventDefault(); scrollToTargetAdjusted()}}
             >
               CLAIM MY NFT!

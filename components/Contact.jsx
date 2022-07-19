@@ -56,7 +56,9 @@ function Contact() {
         <div className="flex flex-col items-center text-standardO">
 
           <h2 className='text-[32px] font-headline leading-[32px] text-center mb-12'>
-            {title}
+            What do you call a really funny NFT?
+            <br/><br/>
+            An NFHehehehe
           </h2>
 
           <p className='max-w-[568px] text-base mb-12 text-center w-full font-body leading-[25px]'>

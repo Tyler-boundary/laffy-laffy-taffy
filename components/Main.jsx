@@ -5,6 +5,7 @@ import CustomProductViewer from './CustomProductViewer';
 const topText = process.env.NEXT_PUBLIC_HERO_SECTION_BODY ?? "";
 const headline = process.env.NEXT_PUBLIC_MIDSECTION_HEADLINE ?? "";
 const description = process.env.NEXT_PUBLIC_MIDSECTION_DESCRIPTION ?? "";
+const cta_link = process.env.NEXT_PUBLIC_HERO_CTA_LINK ?? "/";
 
 function Main({image}) {
   
@@ -20,9 +21,9 @@ function Main({image}) {
             1. &nbsp; &nbsp;Connect your wallet
           </h2>
 
-          <h3 className='text- md:text-[36px] text-start font-body md:font-light leading-[18px] md:leading-[38.4px]'>
-            Retired joke NFTs drop 7/20! Connect <br></br> your wallet and explore the site so you&apos;re  ready to mint yours. First come, first served.
-          </h3>
+          <p className='text- md:text-[36px] text-start font-body md:font-light leading-[18px] md:leading-[38.4px]'>
+            Click the “Claim My NFT” button above to start the minting process. NFTs will be given away at random — first come, first served.
+          </p>
 
         </div>
 
@@ -32,9 +33,9 @@ function Main({image}) {
             2. &nbsp; &nbsp;Get Your nft
           </h2>
 
-          <h3 className='text- md:text-[36px] lowercase text-start font-body md:font-light  leading-[18px] md:leading-[38.4px]'>
-            Check out our collection of 120 NFTs <br></br> featuring classic jokes, and claim your favorite! <br></br> All are free to mint.
-          </h3>
+          <p className='text- md:text-[36px] lowercase text-start font-body md:font-light  leading-[18px] md:leading-[38.4px]'>
+          Follow the instructions, connect your wallet and claim your NFT. It’s that easy! All NFTs are backed by the Polygon blockchain and are free (yes, free) to mint.
+          </p>
 
         </div>
 
@@ -44,11 +45,19 @@ function Main({image}) {
             3. &nbsp; &nbsp;Laff
           </h2>
 
-          <h3 className='text- md:text-[36px] text-start font-body md:font-light  leading-[18px] md:leading-[38.4px]'>
+          <p className=' md:text-[36px] text-start font-body md:font-light  leading-[18px] md:leading-[38.4px]'>
             Congrats! You got a piece of Laff history.
-          </h3>
+          </p>
 
         </div>
+
+          <a 
+            href={cta_link}
+            className="px-[37.5px] leading-[14px] py-[13px] text-center text-secondary bg-[#EA6354] rounded-[4px] text-[22px] tracking-[.04em] font-light"
+            onClick = {e => {e.preventDefault(); scrollToTargetAdjusted()}}
+          >
+            CLAIM MY NFT!
+          </a>
 
       </div>
 
@@ -59,7 +68,9 @@ function Main({image}) {
             THESE Classic lols <br></br> are now nfts
           </h2>
           <p className='text-base md:text-[27px] leading-[120%] font-extralight lg:max-w-[487px] lg:mx-0 md:mx-auto lg:text-left md:text-center  md:max-w-[552px]'>
-            We all love the punderful jokes that Laffy <br></br> Taffy is known for. Now, some jokes are <br></br> retired from the wrappers and converted <br></br> into these playful, vibrant, trading <br></br> card-inspired NFTs.
+            We all love the punderful jokes that Laffy Taffy is known for. Now,15 jokes have been retired from the wrappers and converted into these unique, limited edition NFTs.
+            <br/><br/>
+            Check out the full collection below 
           </p>
         </div>
 

@@ -17,7 +17,7 @@ export const CustomClaimViewer = ({filename}) => {
 
             <div className='w-full h-full '>
                 <Image
-                  className='object-cover h-full w-full object-center rounded-[32px]'
+                  className='object-cover h-full w-full object-center'
                   src={`/laffyTaffy/${filename}`}
                   alt={filename}
                   layout="responsive"

@@ -4,7 +4,7 @@ import Grid from "../public/footer_grid.svg";
 import { arraySocialMedia } from '../helpers';
 // import LogoContact from "../public/logoContact.png";
 
-const logoFileName = '/' +process.env.NEXT_PUBLIC_FOOTER_LOGO;
+const logoFileName = '/' +process.env.NEXT_PUBLIC_NAVBAR_LOGO;
 const footerImage = "/" + process.env.NEXT_PUBLIC_MAIN_IMAGE;
 const title = process.env.NEXT_PUBLIC_FOOTER_HEADLINE ?? "";
 const description = process.env.NEXT_PUBLIC_FOOTER_BODY ?? "";
@@ -36,7 +36,7 @@ function Contact() {
 
       <div className="max-w-[1960px] px-4 md:px-10 lg:px-20 w-full h-full mx-auto flex flex-col items-center">
 
-        <div className='h-full max-h-max mb-[96px] md:mb-[60px] lg:mb-[97px]'>
+        <div className='h-full max-h-max max-w-[146.3px] mb-[96px] md:mb-[60px] lg:mb-[97px]'>
 
           {
 
@@ -46,6 +46,7 @@ function Contact() {
               alt={logoFileName.replace("/","")}
               width={width}
               height={height}
+              className="invert"
               />
             )
 

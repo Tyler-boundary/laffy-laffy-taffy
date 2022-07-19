@@ -17,11 +17,11 @@ function Main({image}) {
         
         <div className="flex flex-col space-y-4 md:space-y-8 w-full">
 
-          <h2 className="text-[18px] md:text-[34px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
+          <h2 className="text-[26px] md:text-[54px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
             1. &nbsp; &nbsp;Connect your wallet
           </h2>
 
-          <p className='text- md:text-[36px] text-start font-body md:font-light leading-[18px] md:leading-[38.4px]'>
+          <p className='text-lg md:text-[30px] text-start font-body md:font-light leading-[18px] md:leading-[38.4px]'>
             Click the “Claim My NFT” button above to start the minting process. NFTs will be given away at random — first come, first served.
           </p>
 
@@ -29,23 +29,23 @@ function Main({image}) {
 
         <div className="flex flex-col space-y-4 md:space-y-10 w-full">
 
-          <h2 className="text-[18px] md:text-[34px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
+          <h2 className="text-[26px] md:text-[54px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
             2. &nbsp; &nbsp;Get Your nft
           </h2>
 
-          <p className='text- md:text-[36px] lowercase text-start font-body md:font-light  leading-[18px] md:leading-[38.4px]'>
-          Follow the instructions, connect your wallet and claim your NFT. It’s that easy! All NFTs are backed by the Polygon blockchain and are free (yes, free) to mint.
+          <p className='text-lg md:text-[30px] text-start font-body md:font-light  leading-[18px] md:leading-[38.4px]'>
+            Follow the instructions, connect your wallet and claim your NFT. It’s that easy! All NFTs are backed by the Polygon blockchain and are free (yes, free) to mint.
           </p>
 
         </div>
 
         <div className="flex flex-col space-y-4 md:space-y-10 w-full">
 
-          <h2 className="text-[18px] md:text-[34px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
+          <h2 className="text-[26px] md:text-[54px] w-full uppercase text-start text-[#4E1DD0] font-body md:font-semibold leading-[16.8px] md:leading-[23.04px]">
             3. &nbsp; &nbsp;Laff
           </h2>
 
-          <p className=' md:text-[36px] text-start font-body md:font-light  leading-[18px] md:leading-[38.4px]'>
+          <p className='text-lg md:text-[30px] text-start font-body md:font-light  leading-[18px] md:leading-[38.4px]'>
             Congrats! You got a piece of Laff history.
           </p>
 
@@ -53,8 +53,9 @@ function Main({image}) {
 
           <a 
             href={cta_link}
-            className="px-[37.5px] leading-[14px] py-[13px] text-center text-secondary bg-[#EA6354] rounded-[4px] text-[22px] tracking-[.04em] font-light"
-            onClick = {e => {e.preventDefault(); scrollToTargetAdjusted()}}
+            className="px-[37.5px] leading-[14px] py-[13px] text-center text-secondary bg-[#EA6354] rounded-[4px] text-[20px] tracking-[.04em] font-light"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             CLAIM MY NFT!
           </a>
@@ -69,8 +70,7 @@ function Main({image}) {
           </h2>
           <p className='text-base md:text-[27px] leading-[120%] font-extralight lg:max-w-[487px] lg:mx-0 md:mx-auto lg:text-left md:text-center  md:max-w-[552px]'>
             We all love the punderful jokes that Laffy Taffy is known for. Now,15 jokes have been retired from the wrappers and converted into these unique, limited edition NFTs.
-            <br/><br/>
-            Check out the full collection below 
+            Check out the full collection below.
           </p>
         </div>
 

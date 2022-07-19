@@ -74,7 +74,7 @@ const Hero = () => {
 
   return (
     <>
-
+    
       {/* <section className="h-[368px] md:h-[500px] lg:h-[560px] w-full mx-auto flex flex-col justify-center items-center max-w-[2500px] relative"> */}
       <section className="h-[calc(95vh-94.35px)] w-full mx-auto flex flex-col justify-center items-center max-w-[6000px] relative">
 
@@ -108,10 +108,10 @@ const Hero = () => {
 
         <div className="absolute inset-0 w-full h-full items-center flex flex-col justify-center md:justify-start">
 
-            <h1 className="max-w-[480px] md:max-w-[560px] lg:max-w-[955px] px-1 md:px-0 w-full text-[47.52px]  leading-[52px] md:text-[79.2px] md:leading-[60px] lg:text-[84.48px] lg:leading-[64px] text-[#5229D1] font-headline text-center mb-6 md:mb-10 md:pt-[120px]">
+            <h1 className="max-w-[480px] font-mobile md:max-w-[560px] lg:max-w-[955px] px-1 md:px-0 w-full text-[47.52px]  leading-[52px] md:text-[79.2px] md:leading-[60px] lg:text-[84.48px] lg:leading-[64px] text-[#5229D1] font-headline text-center mb-6 md:mb-10 md:pt-[120px]">
               GRAB A LAFFY TAFFY NFT!
               <br />
-              <span className="text-[39.6px] md:text-[62.04px]">
+              <span className=" font-mobile text-[36px] xs:text-[39.6px] md:text-[62.04px]">
               Minting is now live (and free).
               </span>
               

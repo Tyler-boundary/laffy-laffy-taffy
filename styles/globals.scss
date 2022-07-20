@@ -14,13 +14,68 @@
 
 @import "./mixins";
 
+// @font-face {
+//   font-family: "Matter SQ";
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url("/fonts/matter_sq/Matter SQ Regular.woff") format("woff");
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/Gotham-Font/Gotham-Light.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Gotham-Font/GothamBook.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Gotham-Font/GothamMedium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Gotham-Font/Gotham-Bold.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/Gotham-Font/Gotham-Black.otf");
+  font-display: swap;
+}
+
+@media (max-width: 480px){
+  .font-mobile{
+    font-size: 36px!important;
+  }
+  
+}
+
 html {
   @apply scroll-smooth;
 }
 
 body {
   font-weight: 400;
-  font-family: $bodyFontLocal;
+  font-family: "Gotham";
   background-color: standardModeBG();
   color: standardModeText();
 }
@@ -58,6 +113,7 @@ h1,h2,h3,h4,h5{
 
 body{
   background-color: backgroundColor();
+  font-family: "Gotham";
 }
 
 .logo{

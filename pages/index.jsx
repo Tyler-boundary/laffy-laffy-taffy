@@ -23,12 +23,8 @@ const Home = ({gallery}) => {
         <title>{process.env.NEXT_PUBLIC_SITE_TITLE}</title>
         <link rel="shortcut icon" href={`/${process.env.NEXT_PUBLIC_FAVICON}`} />
       </Head>
-      
-      <Hero />    
 
-      <Main image={gallery[0]}/>  
       <SoldOut/>
-      <Contact/>
 
     </>
   );

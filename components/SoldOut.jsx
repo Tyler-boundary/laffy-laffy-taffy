@@ -67,6 +67,7 @@ function SoldOut() {
             alt={"background-desktop.png"}
             className="object-cover select-none"
             layout="fill"
+            priority={true}
           />
         </div>
 
@@ -76,6 +77,7 @@ function SoldOut() {
             alt={"background-mobile.png"}
             className="object-cover select-none"
             layout="fill"
+            priority={true}
           />
         </div>
 
@@ -91,6 +93,7 @@ function SoldOut() {
               width={2740}
               height={917}
               layout="responsive"
+              priority={true}
           />
         </div>
 
@@ -102,6 +105,7 @@ function SoldOut() {
               width={1010}
               height={482}
               layout="responsive"
+              priority={true}
           />
         </div>
 

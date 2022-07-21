@@ -4,11 +4,11 @@ import Image from "next/image";
 function SoldOut() {
   return (
 
-    <section className="w-full max-w-[2500px] mx-auto pt-[143px] pb-[45px] relative">
+    <section className="w-full max-w-[2500px] mx-auto pt-[50px] lg2:pt-[75px] 2xl:pt-[143px] pb-[45px] relative">
 
       <div className="flex flex-col relative z-[1]">
 
-        <h2 className="z-[3] px-5 lg2:px-0 font-lilita leading-[40px] text-[48px] sm:leading-[80px] sm:text-[80px] md:leading-[117px] md:text-[135px] lg2:max-w-[80%] 2xl:max-w-[75%] mx-auto text-[#FEE63E] w-full font-normal text-center tracking-[-.02em] uppercase">
+        <h2 className="z-[3] px-5 lg2:px-0 font-lilita leading-[48px] text-[48px] sm:leading-[80px] sm:text-[80px] lg2:leading-[117px] lg2:text-[135px] lg2:max-w-[80%] 2xl:max-w-[75%] mx-auto text-[#FEE63E] w-full font-normal text-center tracking-[-.02em] uppercase">
           ThAT’S A WRAP(PER), ALL NFTS ARE CLAIMED!
         </h2>
 
@@ -44,7 +44,7 @@ function SoldOut() {
         <div className="relative max-w-max mx-auto mb-[220px] sm:mb-[394px] lg2:mb-[270px]">
           
           <div className="relative z-[2]">    
-            <a href="" className="block bg-[#FFA2B5] transition-colors ease-in-out duration-150 hover:bg-[#EC6788] font-lilita rounded-[110px] max-w-max mx-auto py-5 px-[30px] text-white uppercase text-[24px] sm:text-[36px] lg2:text-[41px] leading-[44px] text-center font-normal">
+            <a href="" className="block bg-[#FFA2B5] transition-colors ease-in-out duration-150 hover:bg-[#EC6788] font-lilita rounded-[110px] max-w-max mx-auto py-2.5 md:py-5 px-[30px] text-white uppercase text-[24px] sm:text-[36px] lg2:text-[41px] leading-[44px] text-center font-normal">
               SHOP NOW
             </a>
           </div>

@@ -15,8 +15,8 @@ function SoldOut() {
         <p className="text-[#FEE63E] max-w-[654px] mx-auto lg2:max-w-full mt-6 lg2:mt-16 uppercase text-center tracking-[.01em] px-5 text-[24px] sm:text-[36px] md:text-[45px] lg:2leading-[44px] font-lilita font-normal mb-7">
           STAY IN TOUCH FOR INFO ON NEW PRODUCTS AND DROPS
         </p>
-
-        <form name="contact" className="flex flex-col max-w-max mx-auto mb-[22px] w-full px-5" data-netlify="true"  method="POST">
+        
+        <form name="contact" method="POST" data-netlify="true" className="flex flex-col max-w-max mx-auto mb-[22px] w-full px-5">
 
           <div className="flex justify-between space-x-1 bg-white w-full max-w-[487px] lg2:max-w-[633px] rounded-[29px]">
 

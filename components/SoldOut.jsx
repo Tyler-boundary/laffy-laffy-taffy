@@ -38,13 +38,13 @@ function SoldOut() {
         </form>
 
         <h4 className="text-white px-5 sm:px-0 max-w-[355px] mx-auto lg2:max-w-full font-lilita text-center uppercase tracking-[-.01em] text-[24px] sm:text-[28px] lg2:text-[31px] leading-[33px] mb-7">
-          IN THE MEAN TIME, ENJOY SOME LAFFY TAFFY
+          IN THE MEANTIME, ENJOY SOME LAFFY TAFFY
         </h4>
 
         <div className="relative max-w-max mx-auto mb-[220px] sm:mb-[394px] lg2:mb-[270px]">
           
           <div className="relative z-[2]">    
-            <a href="" className="block bg-[#FFA2B5] transition-colors ease-in-out duration-150 hover:bg-[#EC6788] font-lilita rounded-[110px] max-w-max mx-auto py-2.5 md:py-5 px-[30px] text-white uppercase text-[24px] sm:text-[36px] lg2:text-[41px] leading-[44px] text-center font-normal">
+            <a href="https://www.laffytaffy.com/where-to-buy?utm_medium=bitski&utm_source=landing.page&utm_campaign=nft&utm_content=landing.page" className="block bg-[#FFA2B5] transition-colors ease-in-out duration-150 hover:bg-[#EC6788] font-lilita rounded-[110px] max-w-max mx-auto py-2.5 md:py-5 px-[30px] text-white uppercase text-[24px] sm:text-[36px] lg2:text-[41px] leading-[44px] text-center font-normal">
               SHOP NOW
             </a>
           </div>

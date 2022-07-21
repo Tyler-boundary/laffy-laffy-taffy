@@ -62,13 +62,26 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Lilita";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Lilita/LilitaOne-Regular.ttf");
+  font-display: swap;
+}
+
 @media (max-width: 480px){
   .font-mobile{
     font-size: 36px!important;
   }
   
 }
-
+.font-lilita{
+  font-family: "Lilita"
+}
+.font-gotham{
+  font-family: "Gotham"
+}
 html {
   @apply scroll-smooth;
 }

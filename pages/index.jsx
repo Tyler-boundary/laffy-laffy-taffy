@@ -8,6 +8,7 @@ import {useEffect} from "react";
 import { assignColors } from "../helpers";
 import Contact from "../components/Contact";
 import Main from "../components/Main";
+import SoldOut from "../components/SoldOut";
 
 const Home = ({gallery}) => {
 
@@ -22,13 +23,8 @@ const Home = ({gallery}) => {
         <title>{process.env.NEXT_PUBLIC_SITE_TITLE}</title>
         <link rel="shortcut icon" href={`/${process.env.NEXT_PUBLIC_FAVICON}`} />
       </Head>
-      
-      <Hero />    
 
-      <Main image={gallery[0]}/>  
-      
-      <Grid gallery={gallery}></Grid>
-      <Contact/>
+      <SoldOut/>
 
     </>
   );

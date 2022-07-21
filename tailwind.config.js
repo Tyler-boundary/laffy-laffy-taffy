@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "base": "1440px"
+        "lg2": "1080px",
+        "base": "1440px",
+        "3xl": "1600px"
       },
       colors: {
         'standard' : 'var(--standard-mode)',

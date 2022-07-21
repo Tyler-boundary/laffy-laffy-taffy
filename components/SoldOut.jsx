@@ -22,7 +22,7 @@ function SoldOut() {
 
             <input
               type="email"
-              className="outline-none rounded-l-[29px] w-full py-[7px] bg-white pl-[33px] font-lilita text-[#DAD0FC]  text-[20px] sm:text-[28px] lg2:text-[34px] leading-[44px] uppercase font-normal placeholder:text-[#DAD0FC]"
+              className="outline-none rounded-l-[29px] w-full py-[7px] bg-white pl-[33px] font-lilita text-[#DAD0FC] text-[20px] lg2:text-[24px]  placeholder:text-[20px] sm:placeholder:text-[28px] lg2:placeholder:text-[34px] leading-[44px] uppercase font-normal placeholder:text-[#DAD0FC]"
               placeholder="YOUR EMAIL..."
               name="email"
             />

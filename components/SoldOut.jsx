@@ -55,7 +55,7 @@ function SoldOut() {
 
         </div>
 
-        <p className="font-gotham px-5 sm:px-0 pt-[30px] lg2:mt-0 max-w-[592px] mx-auto lg2:max-w-full text-base sm:text-lg lg2:text-[20px] text-center font-normal text-white tracking-[.01em] leading-6">By clicking submit, you agree to receive marketing and promotional emails from Ferrara Candy Compan</p>
+        <p className="font-gotham px-5 sm:px-0 pt-[30px] lg2:mt-0 max-w-[592px] mx-auto lg2:max-w-full text-base sm:text-lg lg2:text-[20px] text-center font-normal text-white tracking-[.01em] leading-6">By clicking submit, you agree to receive marketing and promotional emails from Ferrara Candy Company</p>
 
       </div>
 

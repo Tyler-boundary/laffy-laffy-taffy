@@ -8,6 +8,7 @@ import {useEffect} from "react";
 import { assignColors } from "../helpers";
 import Contact from "../components/Contact";
 import Main from "../components/Main";
+import SoldOut from "../components/SoldOut";
 
 const Home = ({gallery}) => {
 
@@ -26,8 +27,7 @@ const Home = ({gallery}) => {
       <Hero />    
 
       <Main image={gallery[0]}/>  
-      
-      <Grid gallery={gallery}></Grid>
+      <SoldOut/>
       <Contact/>
 
     </>

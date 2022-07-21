@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        "lg2": "1080px",
         "base": "1440px"
       },
       colors: {

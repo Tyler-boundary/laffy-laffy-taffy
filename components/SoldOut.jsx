@@ -4,7 +4,7 @@ import Image from "next/image";
 function SoldOut() {
   return (
 
-    <section className="w-full max-w-[2500px] mx-auto pt-[50px] lg2:pt-[75px] 2xl:pt-[143px] pb-[45px] relative">
+    <section className="w-full max-w-[2500px] mx-auto pt-[50px] md:pt-[70px] lg2:pt-[75px] 2xl:pt-[143px] pb-[45px] relative">
 
       <div className="flex flex-col relative z-[1]">
 

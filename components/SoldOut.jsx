@@ -16,8 +16,8 @@ function SoldOut() {
           STAY IN TOUCH FOR INFO ON NEW PRODUCTS AND DROPS
         </p>
         
-        <form name="contact" method="POST" data-netlify="true" className="flex flex-col max-w-max mx-auto mb-[22px] w-full px-5">
-
+        <form name="contact" method="POST" data-netlify="true" className="flex flex-col max-w-max mx-auto mb-[22px] w-full px-5" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
           <div className="flex justify-between space-x-1 bg-white w-full max-w-[487px] lg2:max-w-[633px] rounded-[29px]">
 
             <input

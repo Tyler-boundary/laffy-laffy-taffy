@@ -29,7 +29,7 @@ function SoldOut() {
 
             <input
               type="submit"
-              className="outline-none rounded-r-[29px] py-[7px] pl-5 pr-[27px] bg-[#5229D1] text-[#FFBBC8]  text-[20px] sm:text-[28px] lg2:text-[34px] leading-[44px] uppercase font-normal font-lilita"
+              className="outline-none cursor-pointer rounded-r-[29px] py-[7px] pl-5 pr-[27px] bg-[#5229D1] text-[#FFBBC8]  text-[20px] sm:text-[28px] lg2:text-[34px] leading-[44px] uppercase font-normal font-lilita"
               value="SUBMIT"
             />
 

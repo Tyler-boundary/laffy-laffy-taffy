@@ -8,7 +8,7 @@ function SoldOut() {
 
       <div className="flex flex-col relative z-[1]">
 
-        <h2 className="z-[3] px-5 lg2:px-0 font-lilita leading-[48px] text-[48px] sm:leading-[80px] sm:text-[80px] lg2:leading-[117px] lg2:text-[135px] lg2:max-w-[80%] 2xl:max-w-[75%] mx-auto text-[#FEE63E] w-full font-normal text-center tracking-[-.02em] uppercase">
+        <h2 className="z-[3] px-5 lg2:px-0 font-lilita leading-[48px] text-[48px] sm:leading-[80px] sm:text-[80px] lg2:text-[100px] lg2:leading-[90px] 3xl:!leading-[117px] 3xl:!text-[135px] lg2:max-w-[80%] 2xl:max-w-[75%] mx-auto text-[#FEE63E] w-full font-normal text-center tracking-[-.02em] uppercase">
           ThAT’S A WRAP(PER), ALL NFTS ARE CLAIMED!
         </h2>
 

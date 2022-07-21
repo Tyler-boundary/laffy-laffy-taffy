@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       screens: {
         "lg2": "1080px",
-        "base": "1440px"
+        "base": "1440px",
+        "3xl": "1600px"
       },
       colors: {
         'standard' : 'var(--standard-mode)',
